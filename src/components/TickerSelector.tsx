@@ -94,7 +94,7 @@ export default function TickerSelector({
   // Build sector → ticker[] map preserving SECTOR_ORDER
   const grouped = Object.fromEntries(
     SECTOR_ORDER.map((s) => [s, [] as string[]])
-  ) as Record<Sector, string[]>;
+  ) as unknown as Record<Sector, string[]>;
 
   for (const t of tickers) {
     const s = sectors[t] ?? "Other";
