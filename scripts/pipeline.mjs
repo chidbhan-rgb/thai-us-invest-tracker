@@ -98,12 +98,23 @@ General rules:
 - Return a JSON array. If no stocks found, return []
 - Do not include Thai stocks (SET market), only US stocks`;
 
-async function extractMentions(transcript, videoTitle) {
-  if (!transcript || transcript.length < 100) return [];
+const CHUNK_SIZE = 8000;
+const VALID_ACTIONS = ["ซื้อ", "ซื้อเพิ่ม", "ถือ", "ขาย", "หลีกเลี่ยง"];
 
-  // Truncate very long transcripts (Claude has a context limit but we also want to keep cost down)
-  const text = transcript.slice(0, 8000);
+/** Split transcript into overlapping chunks so mentions near boundaries aren't cut off */
+function chunkTranscript(text) {
+  const chunks = [];
+  let i = 0;
+  while (i < text.length) {
+    chunks.push(text.slice(i, i + CHUNK_SIZE));
+    i += CHUNK_SIZE;
+  }
+  return chunks;
+}
 
+/** Send one chunk to Claude and return raw mention array */
+async function callClaude(chunk, videoTitle, chunkIndex, totalChunks) {
+  const label = totalChunks > 1 ? ` (chunk ${chunkIndex + 1}/${totalChunks})` : "";
   try {
     const response = await client.messages.create({
       model: "claude-sonnet-4-5",
@@ -112,21 +123,18 @@ async function extractMentions(transcript, videoTitle) {
         {
           type: "text",
           text: SYSTEM_PROMPT,
-          // Cache the system prompt — it never changes between calls
-          cache_control: { type: "ephemeral" },
+          cache_control: { type: "ephemeral" }, // cache system prompt across all chunks
         },
       ],
       messages: [
         {
           role: "user",
-          content: `Video title: ${videoTitle}\n\nTranscript:\n${text}`,
+          content: `Video title: ${videoTitle}${label}\n\nTranscript:\n${chunk}`,
         },
       ],
     });
 
     const raw = response.content[0].text.trim();
-
-    // Extract JSON array from the response (handles markdown code blocks)
     const jsonMatch = raw.match(/\[[\s\S]*\]/);
     if (!jsonMatch) return [];
 
@@ -134,15 +142,54 @@ async function extractMentions(transcript, videoTitle) {
     if (!Array.isArray(parsed)) return [];
 
     return parsed.filter(
-      (m) =>
-        m.ticker &&
-        m.action &&
-        ["ซื้อ", "ซื้อเพิ่ม", "ถือ", "ขาย", "หลีกเลี่ยง"].includes(m.action)
+      (m) => m.ticker && m.action && VALID_ACTIONS.includes(m.action)
     );
   } catch (err) {
-    console.error(`  ❌ Claude error: ${err.message}`);
+    console.error(`  ❌ Claude error${label}: ${err.message}`);
     return [];
   }
+}
+
+/** Merge mentions from all chunks — deduplicate by ticker, keeping the entry with a non-null price,
+ *  or the last one seen if both/neither have a price */
+function mergeMentions(allMentions) {
+  const map = new Map();
+  for (const m of allMentions) {
+    const ticker = m.ticker.toUpperCase();
+    if (!map.has(ticker)) {
+      map.set(ticker, { ...m, ticker });
+    } else {
+      const existing = map.get(ticker);
+      // Prefer entry with a real price; otherwise keep the later (more complete) one
+      if (m.price != null && existing.price == null) {
+        map.set(ticker, { ...m, ticker });
+      }
+    }
+  }
+  return [...map.values()];
+}
+
+async function extractMentions(transcript, videoTitle) {
+  if (!transcript || transcript.length < 100) return [];
+
+  const chunks = chunkTranscript(transcript);
+  console.log(`   Splitting into ${chunks.length} chunk(s) of up to ${CHUNK_SIZE} chars`);
+
+  const allMentions = [];
+  for (let i = 0; i < chunks.length; i++) {
+    if (i > 0) {
+      await new Promise((r) => setTimeout(r, DELAY_MS));
+    }
+    const found = await callClaude(chunks[i], videoTitle, i, chunks.length);
+    console.log(`   Chunk ${i + 1}/${chunks.length}: ${found.length} mention(s)`);
+    allMentions.push(...found);
+  }
+
+  const merged = mergeMentions(allMentions);
+  if (chunks.length > 1) {
+    console.log(`   Merged → ${merged.length} unique ticker(s)`);
+  }
+  return merged;
 }
 
 // ─── Main ─────────────────────────────────────────────────────
