@@ -1,0 +1,39 @@
+name: Daily Stock Pipeline
+
+on:
+  schedule:
+    # 8:00 AM Bangkok (UTC+7) = 01:00 UTC
+    - cron: "0 1 * * *"
+  workflow_dispatch:  # allow manual trigger
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to push updated stocks.json
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/pipeline.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stocks.json
+          git diff --staged --quiet || git commit -m "data: update stocks $(date -u +%Y-%m-%d) [skip ci]"
+          git push
