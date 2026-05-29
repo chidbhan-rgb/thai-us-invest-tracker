@@ -29,7 +29,7 @@ function TickerButton({
   return (
     <button
       onClick={() => onSelect(ticker)}
-      className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-bold transition-all"
+      className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-base font-bold transition-all"
       style={{
         background: isActive ? "#fff" : "#111",
         color: isActive ? "#000" : "#6b7280",
@@ -38,7 +38,7 @@ function TickerButton({
     >
       {ticker}
       <span
-        className="text-xs px-1.5 py-0.5 rounded font-black"
+        className="text-sm px-2 py-0.5 rounded font-black"
         style={{
           background: isActive && ac ? ac.color : ac?.dim ?? "#111",
           color: isActive ? "#000" : ac?.color ?? "#6b7280",

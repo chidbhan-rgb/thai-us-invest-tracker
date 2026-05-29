@@ -39,7 +39,7 @@ export default function VideoList({ videos }: Props) {
               >
                 {/* Date */}
                 <div
-                  className="text-xs font-mono pt-0.5 w-14 shrink-0"
+                  className="text-sm font-mono pt-0.5 w-16 shrink-0"
                   style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}
                 >
                   {v.date.slice(5)}
@@ -48,7 +48,7 @@ export default function VideoList({ videos }: Props) {
                 {/* Title */}
                 <div className="flex-1 min-w-0">
                   <div
-                    className="text-sm leading-snug truncate"
+                    className="text-base leading-snug truncate"
                     style={{ color: isOpen ? "#f8fafc" : "#d1d5db" }}
                   >
                     {v.videoTitle}
@@ -58,7 +58,7 @@ export default function VideoList({ videos }: Props) {
                 {/* Stock count badge + chevron */}
                 <div className="flex items-center gap-2 shrink-0">
                   <span
-                    className="text-xs font-black px-2 py-0.5 rounded"
+                    className="text-sm font-black px-2 py-0.5 rounded"
                     style={{ background: "#1a1a1a", color: "#6b7280" }}
                   >
                     {v.stocks.length} stocks
@@ -104,7 +104,7 @@ export default function VideoList({ videos }: Props) {
                         >
                           {/* Ticker */}
                           <div
-                            className="text-xs font-black w-12 shrink-0 pt-0.5"
+                            className="text-sm font-black w-14 shrink-0 pt-0.5"
                             style={{
                               color: "#e5e7eb",
                               fontFamily: "var(--font-geist-mono)",
@@ -114,9 +114,9 @@ export default function VideoList({ videos }: Props) {
                           </div>
 
                           {/* Action badge */}
-                          <div className="w-10 shrink-0">
+                          <div className="w-12 shrink-0">
                             <span
-                              className="text-xs font-black px-1.5 py-0.5 rounded"
+                              className="text-sm font-black px-2 py-1 rounded"
                               style={{ background: ac.dim, color: ac.color }}
                             >
                               {ac.label}
@@ -125,7 +125,7 @@ export default function VideoList({ videos }: Props) {
 
                           {/* Note */}
                           <div
-                            className="flex-1 text-xs leading-snug"
+                            className="flex-1 text-sm leading-snug"
                             style={{ color: "#9ca3af" }}
                           >
                             {s.note}
@@ -134,7 +134,7 @@ export default function VideoList({ videos }: Props) {
                           {/* Price */}
                           {s.price != null && (
                             <div
-                              className="text-xs font-mono shrink-0"
+                              className="text-sm font-mono shrink-0"
                               style={{
                                 color: "#6b7280",
                                 fontFamily: "var(--font-geist-mono)",

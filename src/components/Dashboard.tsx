@@ -143,10 +143,10 @@ export default function Dashboard({ initialData }: Props) {
             {selected && (
               <div>
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="text-2xl font-black text-white">{selected}</div>
+                  <div className="text-3xl font-black text-white">{selected}</div>
                   {ac && (
                     <span
-                      className="text-xs font-black px-2 py-1 rounded-lg"
+                      className="text-sm font-black px-2.5 py-1 rounded-lg"
                       style={{ background: ac.dim, color: ac.color }}
                     >
                       {ac.label}
@@ -154,7 +154,7 @@ export default function Dashboard({ initialData }: Props) {
                   )}
                 </div>
                 <div
-                  className="text-xs"
+                  className="text-sm"
                   style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}
                 >
                   {mentions.length} mention{mentions.length !== 1 ? "s" : ""}
