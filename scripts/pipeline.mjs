@@ -83,10 +83,16 @@ Extract every US stock mentioned with a clear recommendation.
 For each stock return JSON with:
 - ticker: US stock ticker symbol (e.g. NVDA, AAPL, TSLA)
 - action: one of "ซื้อ" | "ซื้อเพิ่ม" | "ถือ" | "ขาย" | "หลีกเลี่ยง"
-- price: price in USD if explicitly mentioned (number or null)
+- price: the price in USD explicitly stated by the speaker as a buy price, target price, or entry price FOR THAT SPECIFIC TICKER — or null if not clearly stated
 - note: concise Thai summary of what was said, max 80 characters
 
-Rules:
+Price extraction rules (strict):
+- Set price ONLY if the speaker directly says something like "ซื้อที่ $X", "ราคาเป้า $X", "แนวรับ $X", "เข้าที่ $X" for that exact ticker
+- If the speaker mentions a price in a different context (e.g. current market price, another stock's price, a hypothetical), set price to null
+- If you are not 100% certain the price refers to that ticker as a buy/target/entry price, set price to null
+- Do NOT infer, guess, or carry over prices from context
+
+General rules:
 - Only include stocks with an explicit buy/sell/hold/avoid opinion
 - If the same ticker is mentioned multiple times with different opinions, include only the strongest/clearest one
 - Return a JSON array. If no stocks found, return []

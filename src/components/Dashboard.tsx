@@ -3,8 +3,10 @@
 import { useState } from "react";
 import TickerSelector from "./TickerSelector";
 import MentionList from "./MentionList";
-import { ACTION_META, type StocksData } from "@/lib/types";
+import VideoList from "./VideoList";
+import { ACTION_META, buildVideoList, type StocksData } from "@/lib/types";
 
+type Tab = "By Ticker" | "By Video";
 type SortOption = "Most Mentioned" | "Recent" | "A → Z";
 const SORT_OPTIONS: SortOption[] = ["Most Mentioned", "Recent", "A → Z"];
 
@@ -14,9 +16,13 @@ interface Props {
 
 export default function Dashboard({ initialData }: Props) {
   const allTickers = Object.keys(initialData.mentions);
+  const [tab, setTab] = useState<Tab>("By Ticker");
   const [selected, setSelected] = useState<string>(allTickers[0] ?? "");
   const [sort, setSort] = useState<SortOption>("Most Mentioned");
   const [search, setSearch] = useState("");
+
+  // Precompute video list (stable — doesn't change with UI state)
+  const videos = buildVideoList(initialData.mentions);
 
   // Filter + sort ticker list
   const filteredTickers = allTickers
@@ -71,73 +77,112 @@ export default function Dashboard({ initialData }: Props) {
 
       <div className="max-w-2xl mx-auto px-5 py-8 space-y-8">
 
-        {/* Search + Sort */}
-        <div className="flex gap-3">
-          <input
-            suppressHydrationWarning
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="ค้นหา ticker..."
-            className="flex-1 text-sm px-4 py-2.5 rounded-xl text-white placeholder-slate-700 outline-none"
-            style={{ background: "#111", border: "1px solid #1a1a1a" }}
-          />
-          <div className="flex rounded-xl overflow-hidden" style={{ border: "1px solid #1a1a1a" }}>
-            {SORT_OPTIONS.map((s) => (
-              <button
-                key={s}
-                onClick={() => setSort(s)}
-                className="px-3 py-2 text-xs transition-all"
-                style={{
-                  background: sort === s ? "#1a1a1a" : "transparent",
-                  color: sort === s ? "#e5e7eb" : "#4b5563",
-                }}
-              >
-                {s === "Most Mentioned" ? "Top" : s === "Recent" ? "Recent" : "A-Z"}
-              </button>
-            ))}
-          </div>
+        {/* Tab switcher */}
+        <div
+          className="flex rounded-xl overflow-hidden self-start w-fit"
+          style={{ border: "1px solid #1a1a1a" }}
+        >
+          {(["By Ticker", "By Video"] as Tab[]).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className="px-4 py-2 text-xs transition-all"
+              style={{
+                background: tab === t ? "#1a1a1a" : "transparent",
+                color: tab === t ? "#e5e7eb" : "#4b5563",
+              }}
+            >
+              {t}
+            </button>
+          ))}
         </div>
 
-        {/* Ticker list */}
-        <TickerSelector
-          tickers={filteredTickers}
-          allMentions={initialData.mentions}
-          selected={selected}
-          onSelect={setSelected}
-        />
+        {/* ── By Ticker ── */}
+        {tab === "By Ticker" && (
+          <>
+            {/* Search + Sort */}
+            <div className="flex gap-3">
+              <input
+                suppressHydrationWarning
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="ค้นหา ticker..."
+                className="flex-1 text-sm px-4 py-2.5 rounded-xl text-white placeholder-slate-700 outline-none"
+                style={{ background: "#111", border: "1px solid #1a1a1a" }}
+              />
+              <div className="flex rounded-xl overflow-hidden" style={{ border: "1px solid #1a1a1a" }}>
+                {SORT_OPTIONS.map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setSort(s)}
+                    className="px-3 py-2 text-xs transition-all"
+                    style={{
+                      background: sort === s ? "#1a1a1a" : "transparent",
+                      color: sort === s ? "#e5e7eb" : "#4b5563",
+                    }}
+                  >
+                    {s === "Most Mentioned" ? "Top" : s === "Recent" ? "Recent" : "A-Z"}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-        <div style={{ borderTop: "1px solid #111" }} />
+            {/* Ticker list */}
+            <TickerSelector
+              tickers={filteredTickers}
+              allMentions={initialData.mentions}
+              selected={selected}
+              onSelect={setSelected}
+            />
 
-        {/* Selected ticker header */}
-        {selected && (
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="text-2xl font-black text-white">{selected}</div>
-              {ac && (
-                <span
-                  className="text-xs font-black px-2 py-1 rounded-lg"
-                  style={{ background: ac.dim, color: ac.color }}
+            <div style={{ borderTop: "1px solid #111" }} />
+
+            {/* Selected ticker header */}
+            {selected && (
+              <div>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="text-2xl font-black text-white">{selected}</div>
+                  {ac && (
+                    <span
+                      className="text-xs font-black px-2 py-1 rounded-lg"
+                      style={{ background: ac.dim, color: ac.color }}
+                    >
+                      {ac.label}
+                    </span>
+                  )}
+                </div>
+                <div
+                  className="text-xs"
+                  style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}
                 >
-                  {ac.label}
-                </span>
-              )}
-            </div>
-            {/* Summary line */}
-            <div className="text-xs" style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}>
-              {mentions.length} mention{mentions.length !== 1 ? "s" : ""}
-              {lastMention && (
-                <>
-                  {" · "}last: {lastMention.date}
-                  {" · "}latest:{" "}
-                  <span style={{ color: ac?.color }}>{lastAction}</span>
-                </>
-              )}
-            </div>
-          </div>
+                  {mentions.length} mention{mentions.length !== 1 ? "s" : ""}
+                  {lastMention && (
+                    <>
+                      {" · "}last: {lastMention.date}
+                      {" · "}latest:{" "}
+                      <span style={{ color: ac?.color }}>{lastAction}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            )}
+
+            <MentionList mentions={mentions} ticker={selected} />
+          </>
         )}
 
-        {/* Mention list */}
-        <MentionList mentions={mentions} ticker={selected} />
+        {/* ── By Video ── */}
+        {tab === "By Video" && (
+          <>
+            <div
+              className="text-xs"
+              style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}
+            >
+              {videos.length} videos · {Object.keys(initialData.mentions).length} tickers
+            </div>
+            <VideoList videos={videos} />
+          </>
+        )}
 
       </div>
     </div>

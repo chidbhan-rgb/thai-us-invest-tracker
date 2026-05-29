@@ -20,6 +20,46 @@ export interface PricePoint {
   price: number;
 }
 
+export interface VideoStock {
+  ticker: string;
+  action: Action;
+  price: number | null;
+  note: string;
+}
+
+export interface VideoEntry {
+  videoId: string;
+  videoTitle: string;
+  date: string;
+  stocks: VideoStock[];
+}
+
+/** Aggregate mentions by video, sorted newest first */
+export function buildVideoList(mentions: Record<string, Mention[]>): VideoEntry[] {
+  const map = new Map<string, VideoEntry>();
+
+  for (const [ticker, list] of Object.entries(mentions)) {
+    for (const m of list) {
+      if (!map.has(m.videoId)) {
+        map.set(m.videoId, {
+          videoId: m.videoId,
+          videoTitle: m.videoTitle,
+          date: m.date,
+          stocks: [],
+        });
+      }
+      map.get(m.videoId)!.stocks.push({
+        ticker,
+        action: m.action,
+        price: m.price,
+        note: m.note,
+      });
+    }
+  }
+
+  return [...map.values()].sort((a, b) => b.date.localeCompare(a.date));
+}
+
 export const ACTION_META: Record<Action, { color: string; dim: string; label: string }> = {
   "ซื้อ":       { color: "#22c55e", dim: "#166534", label: "BUY"   },
   "ซื้อเพิ่ม":  { color: "#86efac", dim: "#14532d", label: "ADD"   },
