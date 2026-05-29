@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --font-mono: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  --font-mono: var(--font-geist-mono), 'Courier New', monospace;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
 }
 
 body {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   background-color: #080808;
   color: #f8fafc;
 }

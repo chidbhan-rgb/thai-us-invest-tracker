@@ -69,7 +69,7 @@ export default function Dashboard({ initialData }: Props) {
   if (!allTickers.length) return <EmptyState />;
 
   return (
-    <div className="min-h-screen" style={{ background: "#080808", fontFamily: "var(--font-mono)" }}>
+    <div className="min-h-screen" style={{ background: "#080808" }}>
 
       {/* Sticky header */}
       <div
@@ -97,6 +97,7 @@ export default function Dashboard({ initialData }: Props) {
         {/* Search + Sort */}
         <div className="flex gap-3">
           <input
+            suppressHydrationWarning
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="ค้นหา ticker..."
@@ -169,7 +170,7 @@ function EmptyState() {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center gap-4"
-      style={{ background: "#080808", fontFamily: "var(--font-mono)" }}
+      style={{ background: "#080808" }}
     >
       <div className="text-3xl">📡</div>
       <div className="text-sm" style={{ color: "#4b5563" }}>ยังไม่มีข้อมูล</div>

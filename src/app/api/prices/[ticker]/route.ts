@@ -9,16 +9,15 @@ export async function GET(
   { params }: { params: { ticker: string } }
 ) {
   const { ticker } = params;
-  const to = new Date();
-  const from = new Date();
-  from.setMonth(from.getMonth() - 4);
 
   try {
     const result = await yahooFinance.historical(ticker, {
-      period1: from.toISOString().slice(0, 10),
-      period2: to.toISOString().slice(0, 10),
+      period1: "2026-01-01",
+      period2: new Date().toISOString().slice(0, 10),
       interval: "1d",
     });
+
+    console.log(`[prices/${ticker}] fetched ${result.length} rows`);
 
     const prices: PricePoint[] = result
       .filter((r) => r.close != null)
@@ -29,7 +28,7 @@ export async function GET(
 
     return NextResponse.json(prices);
   } catch (err) {
-    console.error(`Failed to fetch prices for ${ticker}:`, err);
+    console.error(`[prices/${ticker}] fetch failed:`, err);
     return NextResponse.json([], { status: 200 });
   }
 }
