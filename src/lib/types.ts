@@ -9,10 +9,32 @@ export interface Mention {
   note: string;
 }
 
+export type Sector =
+  | "AI/Chip"
+  | "Defense/Drone"
+  | "Software/Cloud"
+  | "Fintech"
+  | "Healthcare"
+  | "Energy"
+  | "Consumer"
+  | "Other";
+
+export const SECTOR_ORDER: Sector[] = [
+  "AI/Chip",
+  "Defense/Drone",
+  "Software/Cloud",
+  "Fintech",
+  "Healthcare",
+  "Energy",
+  "Consumer",
+  "Other",
+];
+
 export interface StocksData {
   lastUpdated: string | null;
   processedVideos: string[];       // video IDs already processed
   mentions: Record<string, Mention[]>;
+  sectors: Record<string, Sector>; // ticker → sector
 }
 
 export interface PricePoint {

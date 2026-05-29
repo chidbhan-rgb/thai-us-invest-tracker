@@ -27,7 +27,7 @@ const DELAY_MS = 5000; // delay between Claude API calls to avoid rate limiting
 function loadData() {
   if (!existsSync(DATA_FILE)) {
     mkdirSync(join(__dirname, "../data"), { recursive: true });
-    return { lastUpdated: null, processedVideos: [], mentions: {} };
+    return { lastUpdated: null, processedVideos: [], mentions: {}, sectors: {} };
   }
   return JSON.parse(readFileSync(DATA_FILE, "utf-8"));
 }
@@ -85,6 +85,11 @@ For each stock return JSON with:
 - action: one of "ซื้อ" | "ซื้อเพิ่ม" | "ถือ" | "ขาย" | "หลีกเลี่ยง"
 - price: the price in USD explicitly stated by the speaker as a buy price, target price, or entry price FOR THAT SPECIFIC TICKER — or null if not clearly stated
 - note: concise Thai summary of what was said, max 80 characters
+- sector: classify the ticker into exactly one of: "AI/Chip" | "Defense/Drone" | "Software/Cloud" | "Fintech" | "Healthcare" | "Energy" | "Consumer" | "Other"
+  Examples: NVDA/ARM/AMD/AVGO/TSM/MU/ASML → "AI/Chip", KTOS/AVAV/RKLB/ONDS/AXON → "Defense/Drone",
+  NOW/CRM/SNOW/ZS/CRWD/PANW/ADBE → "Software/Cloud", SOFI/V/MA/PYPL/MELI/NU → "Fintech",
+  LLY/ISRG/TMDX/NVO/HIMS → "Healthcare", CEG/VST/OKLO/EOSE/IREN → "Energy",
+  WMT/COST/AMZN/TSLA/MCD → "Consumer"
 
 Price extraction rules (strict):
 - Set price ONLY if the speaker directly says something like "ซื้อที่ $X", "ราคาเป้า $X", "แนวรับ $X", "เข้าที่ $X" for that exact ticker
@@ -208,7 +213,8 @@ async function main() {
   if (force) {
     data.processedVideos = [];
     data.mentions = {};
-    console.log("⚠️  Force mode — cleared processed cache and mentions");
+    data.sectors = {};
+    console.log("⚠️  Force mode — cleared processed cache, mentions, and sectors");
   }
 
   const isFirstRun = data.processedVideos.length === 0;
@@ -259,9 +265,13 @@ async function main() {
     console.log(`   Claude found ${mentions.length} stock mention(s)`);
 
     // Merge into data
+    if (!data.sectors) data.sectors = {};
     for (const m of mentions) {
       const ticker = m.ticker.toUpperCase();
       if (!data.mentions[ticker]) data.mentions[ticker] = [];
+
+      // Save / update sector for this ticker
+      if (m.sector) data.sectors[ticker] = m.sector;
 
       // Avoid duplicate entries for the same video+ticker
       const exists = data.mentions[ticker].some((x) => x.videoId === video.id);
@@ -274,7 +284,7 @@ async function main() {
           price: m.price ?? null,
           note: m.note ?? "",
         });
-        console.log(`   ✅ ${ticker} → ${m.action}`);
+        console.log(`   ✅ ${ticker} → ${m.action} [${m.sector ?? "Other"}]`);
       }
     }
 

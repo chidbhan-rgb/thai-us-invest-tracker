@@ -10,6 +10,8 @@ export async function GET() {
     const filePath = join(process.cwd(), "data", "stocks.json");
     const raw = readFileSync(filePath, "utf-8");
     const data: StocksData = JSON.parse(raw);
+    // backfill for data written before sectors field existed
+    if (!data.sectors) data.sectors = {};
     return NextResponse.json(data);
   } catch {
     return NextResponse.json(

@@ -131,6 +131,8 @@ export default function Dashboard({ initialData }: Props) {
             <TickerSelector
               tickers={filteredTickers}
               allMentions={initialData.mentions}
+              sectors={initialData.sectors ?? {}}
+              isSearching={search.length > 0}
               selected={selected}
               onSelect={setSelected}
             />
