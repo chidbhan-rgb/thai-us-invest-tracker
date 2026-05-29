@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import type { StocksData } from "@/lib/types";
 
-export const revalidate = 3600; // revalidate every hour
+export const dynamic = "force-dynamic"; // always read fresh stocks.json
 
 async function getStocksData(): Promise<StocksData> {
   try {
@@ -11,7 +11,7 @@ async function getStocksData(): Promise<StocksData> {
     const raw = readFileSync(filePath, "utf-8");
     return JSON.parse(raw);
   } catch {
-    return { lastUpdated: null, processedVideos: [], mentions: {} };
+    return { lastUpdated: null, processedVideos: [], mentions: {}, sectors: {} };
   }
 }
 
