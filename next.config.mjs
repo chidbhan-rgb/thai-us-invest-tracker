@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    // Tell Vercel's file tracer to bundle data/ into the serverless function
-    outputFileTracingIncludes: {
-      "/": ["./data/**/*"],
-    },
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
