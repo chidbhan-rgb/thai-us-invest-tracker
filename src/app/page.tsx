@@ -1,10 +1,22 @@
 import Dashboard from "@/components/Dashboard";
 import type { StocksData } from "@/lib/types";
-import rawData from "../../data/stocks.json";
+import { readFileSync } from "fs";
+import { join } from "path";
 
-// stocks.json is bundled at deploy time — Vercel redeploys on every git push
-// so the data is always fresh after the pipeline commits stocks.json to git.
+export const dynamic = "force-dynamic";
+
+function getStocksData(): StocksData {
+  try {
+    const raw = readFileSync(join(process.cwd(), "data", "stocks.json"), "utf-8");
+    const data = JSON.parse(raw) as StocksData;
+    if (!data.sectors) data.sectors = {};
+    return data;
+  } catch {
+    return { lastUpdated: null, processedVideos: [], mentions: {}, sectors: {} };
+  }
+}
+
 export default function Page() {
-  const data = rawData as unknown as StocksData;
+  const data = getStocksData();
   return <Dashboard initialData={data} />;
 }
