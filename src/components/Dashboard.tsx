@@ -1,10 +1,9 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import TickerSelector from "./TickerSelector";
-import StockChart from "./StockChart";
 import MentionList from "./MentionList";
-import { ACTION_META, type StocksData, type PricePoint } from "@/lib/types";
+import { ACTION_META, type StocksData } from "@/lib/types";
 
 type SortOption = "Most Mentioned" | "Recent" | "A → Z";
 const SORT_OPTIONS: SortOption[] = ["Most Mentioned", "Recent", "A → Z"];
@@ -16,29 +15,10 @@ interface Props {
 export default function Dashboard({ initialData }: Props) {
   const allTickers = Object.keys(initialData.mentions);
   const [selected, setSelected] = useState<string>(allTickers[0] ?? "");
-  const [priceCache, setPriceCache] = useState<Record<string, PricePoint[]>>({});
   const [sort, setSort] = useState<SortOption>("Most Mentioned");
   const [search, setSearch] = useState("");
 
-  const fetchPrices = useCallback(
-    async (ticker: string) => {
-      if (priceCache[ticker] !== undefined) return;
-      try {
-        const res = await fetch(`/api/prices/${ticker}`);
-        const data: PricePoint[] = await res.json();
-        setPriceCache((c) => ({ ...c, [ticker]: data }));
-      } catch {
-        setPriceCache((c) => ({ ...c, [ticker]: [] }));
-      }
-    },
-    [priceCache]
-  );
-
-  useEffect(() => {
-    if (selected) fetchPrices(selected);
-  }, [selected, fetchPrices]);
-
-  // Filter + sort
+  // Filter + sort ticker list
   const filteredTickers = allTickers
     .filter((t) => t.includes(search.toUpperCase()))
     .sort((a, b) => {
@@ -54,8 +34,8 @@ export default function Dashboard({ initialData }: Props) {
     });
 
   const mentions = initialData.mentions[selected] ?? [];
-  const prices = priceCache[selected] ?? [];
-  const lastAction = mentions[mentions.length - 1]?.action;
+  const lastMention = mentions[mentions.length - 1];
+  const lastAction = lastMention?.action;
   const ac = lastAction ? ACTION_META[lastAction] : null;
 
   const lastUpdatedDisplay = initialData.lastUpdated
@@ -78,10 +58,7 @@ export default function Dashboard({ initialData }: Props) {
       >
         <div className="max-w-2xl mx-auto px-5 py-4 flex items-center justify-between">
           <div>
-            <div
-              className="text-xs uppercase tracking-widest mb-0.5"
-              style={{ color: "#4b5563" }}
-            >
+            <div className="text-xs uppercase tracking-widest mb-0.5" style={{ color: "#4b5563" }}>
               ลงทุนหุ้นอเมริกา
             </div>
             <div className="text-white font-black text-base">Stock Tracker</div>
@@ -129,34 +106,35 @@ export default function Dashboard({ initialData }: Props) {
           onSelect={setSelected}
         />
 
-        {/* Divider */}
         <div style={{ borderTop: "1px solid #111" }} />
 
         {/* Selected ticker header */}
-        <div className="flex items-center gap-3">
-          <div className="text-2xl font-black text-white">{selected}</div>
-          {ac && (
-            <span
-              className="text-xs font-black px-2 py-1 rounded-lg"
-              style={{ background: ac.dim, color: ac.color }}
-            >
-              {ac.label}
-            </span>
-          )}
-        </div>
-
-        {/* Chart */}
-        <StockChart ticker={selected} prices={prices} mentions={mentions} />
-
-        {/* Action legend */}
-        <div className="flex gap-5 flex-wrap">
-          {Object.entries(ACTION_META).map(([k, v]) => (
-            <div key={k} className="flex items-center gap-1.5 text-xs" style={{ color: "#374151" }}>
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: v.color }} />
-              {k}
+        {selected && (
+          <div>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="text-2xl font-black text-white">{selected}</div>
+              {ac && (
+                <span
+                  className="text-xs font-black px-2 py-1 rounded-lg"
+                  style={{ background: ac.dim, color: ac.color }}
+                >
+                  {ac.label}
+                </span>
+              )}
             </div>
-          ))}
-        </div>
+            {/* Summary line */}
+            <div className="text-xs" style={{ color: "#4b5563", fontFamily: "var(--font-geist-mono)" }}>
+              {mentions.length} mention{mentions.length !== 1 ? "s" : ""}
+              {lastMention && (
+                <>
+                  {" · "}last: {lastMention.date}
+                  {" · "}latest:{" "}
+                  <span style={{ color: ac?.color }}>{lastAction}</span>
+                </>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Mention list */}
         <MentionList mentions={mentions} ticker={selected} />
@@ -168,10 +146,7 @@ export default function Dashboard({ initialData }: Props) {
 
 function EmptyState() {
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center gap-4"
-      style={{ background: "#080808" }}
-    >
+    <div className="min-h-screen flex flex-col items-center justify-center gap-4" style={{ background: "#080808" }}>
       <div className="text-3xl">📡</div>
       <div className="text-sm" style={{ color: "#4b5563" }}>ยังไม่มีข้อมูล</div>
       <div className="text-xs text-center max-w-xs leading-relaxed" style={{ color: "#374151" }}>
