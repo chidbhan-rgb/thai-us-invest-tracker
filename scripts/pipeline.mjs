@@ -3,6 +3,7 @@
  *
  * Usage:
  *   ANTHROPIC_API_KEY=sk-... node scripts/pipeline.mjs
+ *   ANTHROPIC_API_KEY=sk-... node scripts/pipeline.mjs --force   # reprocess all videos
  *
  * On first run (empty processedVideos), backfills the last 3 months of videos.
  */
@@ -19,7 +20,7 @@ const DATA_FILE = join(__dirname, "../data/stocks.json");
 const CHANNEL_RSS =
   "https://www.youtube.com/feeds/videos.xml?channel_id=UCcFtS_df5r0zxNZ_7JZgmZQ";
 const BACKFILL_MONTHS = 3;
-const DELAY_MS = 2000; // polite delay between API calls
+const DELAY_MS = 5000; // delay between Claude API calls to avoid rate limiting
 
 // ─── Load / save stocks.json ──────────────────────────────────
 
@@ -95,11 +96,11 @@ async function extractMentions(transcript, videoTitle) {
   if (!transcript || transcript.length < 100) return [];
 
   // Truncate very long transcripts (Claude has a context limit but we also want to keep cost down)
-  const text = transcript.slice(0, 40000);
+  const text = transcript.slice(0, 8000);
 
   try {
     const response = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
+      model: "claude-sonnet-4-5",
       max_tokens: 1024,
       system: [
         {
@@ -146,12 +147,20 @@ async function main() {
     process.exit(1);
   }
 
-  console.log("🚀 Starting pipeline…");
+  const force = process.argv.includes("--force");
+  console.log(`🚀 Starting pipeline…${force ? " (--force: reprocessing all)" : ""}`);
 
   const data = loadData();
+
+  if (force) {
+    data.processedVideos = [];
+    data.mentions = {};
+    console.log("⚠️  Force mode — cleared processed cache and mentions");
+  }
+
   const isFirstRun = data.processedVideos.length === 0;
 
-  if (isFirstRun) {
+  if (isFirstRun && !force) {
     console.log(`📅 First run — will backfill last ${BACKFILL_MONTHS} months`);
   }
 

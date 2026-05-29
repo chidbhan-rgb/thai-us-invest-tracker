@@ -20,10 +20,10 @@ export interface PricePoint {
   price: number;
 }
 
-export const ACTION_META: Record<Action, { bg: string; text: string; label: string }> = {
-  "ซื้อ":       { bg: "#10b981", text: "#fff", label: "BUY" },
-  "ซื้อเพิ่ม":  { bg: "#34d399", text: "#000", label: "ADD" },
-  "ถือ":        { bg: "#f59e0b", text: "#000", label: "HOLD" },
-  "ขาย":        { bg: "#ef4444", text: "#fff", label: "SELL" },
-  "หลีกเลี่ยง": { bg: "#6b7280", text: "#fff", label: "AVOID" },
+export const ACTION_META: Record<Action, { color: string; dim: string; label: string }> = {
+  "ซื้อ":       { color: "#22c55e", dim: "#166534", label: "BUY"   },
+  "ซื้อเพิ่ม":  { color: "#86efac", dim: "#14532d", label: "ADD"   },
+  "ถือ":        { color: "#eab308", dim: "#713f12", label: "HOLD"  },
+  "ขาย":        { color: "#ef4444", dim: "#7f1d1d", label: "SELL"  },
+  "หลีกเลี่ยง": { color: "#6b7280", dim: "#1f2937", label: "AVOID" },
 };

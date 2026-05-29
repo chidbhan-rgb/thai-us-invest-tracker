@@ -1,5 +1,604 @@
 {
-  "lastUpdated": null,
-  "processedVideos": [],
-  "mentions": {}
+  "lastUpdated": "2026-05-29",
+  "processedVideos": [
+    "Cz1g9ANsZIk",
+    "DfjJsQQn6VI",
+    "79z2Q8kKiXo",
+    "9MuskzbbnMo",
+    "CT2QWjtnqSw",
+    "swLFI63fQVM",
+    "8urL22po8Ek",
+    "NHgtmh777us",
+    "4VL0SwVQud8",
+    "-VgHWcdNhnU",
+    "pW0zs5wvWro",
+    "XLQfR4DJ72w",
+    "W0oTXLDXkQw",
+    "lDXiBlKx5ks",
+    "SlDndUJF0HM"
+  ],
+  "mentions": {
+    "EOSE": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ถือ",
+        "price": null,
+        "note": "น้องอ๊อด ร่วงมา รอดูผลการดำเนินงาน ยังมีศักยภาพ"
+      }
+    ],
+    "NBIS": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ถือ",
+        "price": null,
+        "note": "ไม่แน่ใจว่าจะไหว ถูกกดดันจากตลาด รอดูไตรมาส"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ขึ้น 17% ได้สัญญากับ Boom Energy แบบ 3 เฟส ป๋าบูมติดตั้งให้ด้วย"
+      }
+    ],
+    "KTOS": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "หลีกเลี่ยง",
+        "price": null,
+        "note": "ร่วงยับ มาร์จิ้นโดนบีบมาก ซื้อกิจการเยอะ ไม่แน่ใจจะไหว"
+      },
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "กินเรียบ ถึงแนวต้าน 10% ขึ้นไป พอร์ตขายทำกำไร"
+      }
+    ],
+    "MELI": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ร่วงอย่างกับจะเจ๊ง นี่แหละโอกาส อันดับ1ในละตินอเมริกา"
+      }
+    ],
+    "META": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "เคยร่วงไป 85-88 แล้วกลับมาดี โอกาสตอนร่วง"
+      }
+    ],
+    "CEG": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "หลีกเลี่ยง",
+        "price": null,
+        "note": "โดนกดดัน คาดการณ์ดำเนินงานต่ำกว่าคาด ไม่มีดีลใหญ่"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "มีข่าวดี"
+      }
+    ],
+    "TMDX": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ซื้อ",
+        "price": 60,
+        "note": "ถึงแนวรับแล้ว 60 พื้นฐานดี รอเก็บสำหรับคนรอได้"
+      }
+    ],
+    "COST": [
+      {
+        "date": "2026-05-13",
+        "videoId": "Cz1g9ANsZIk",
+        "videoTitle": "EOSE กลับมาแล้ว‼️ NBIS โต 7 เท่า‼️RKLB, PRCT, NBIS, OKLO, CEG, TMDX, MELI, UNH, LLY, PLTR, META,ISRG",
+        "action": "ถือ",
+        "price": null,
+        "note": "ไม่ค่อยลงมารับ 700-800 ยังยาก ลงทุนง่ายระยะยาว"
+      }
+    ],
+    "SPCX": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ซื้อ",
+        "price": 105,
+        "note": "SpaceX IPO วันที่ 12 มิ.ย. แตกพาร์ 5:1 ราคาประมาณ $105 ธุรกิจหลักทำกำไรแล้ว"
+      }
+    ],
+    "V": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ขาย",
+        "price": null,
+        "note": "Berkshire Hathaway ขายวีซ่าออกหมดเกลี้ยง (sold out)"
+      },
+      {
+        "date": "2026-05-27",
+        "videoId": "W0oTXLDXkQw",
+        "videoTitle": "เหมือนนัดกันมา! 5 หุ้น รายใหญ่เข้าเก็บแล้ว!! 🔸\"แอ๊ด\" ช้อนหุ้นอะไร? ZS ทำไมร่วงหนัก🟥",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "วีซ่าดี เข้าได้ ถ้ายิ่งกว่าวีซ่าก็คือมาสเตอร์การ์ด อยู่ในพอร์ตเทรด"
+      }
+    ],
+    "MA": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ขาย",
+        "price": null,
+        "note": "Berkshire Hathaway ขายมาสเตอร์การ์ดออกหมดเกลี้ยง"
+      },
+      {
+        "date": "2026-05-27",
+        "videoId": "W0oTXLDXkQw",
+        "videoTitle": "เหมือนนัดกันมา! 5 หุ้น รายใหญ่เข้าเก็บแล้ว!! 🔸\"แอ๊ด\" ช้อนหุ้นอะไร? ZS ทำไมร่วงหนัก🟥",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "มาสเตอร์การ์ดสวยมาก อยู่ในพอร์ตเทรด ลงมาแนวรับก็ช้อน"
+      }
+    ],
+    "DPZ": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ขาย",
+        "price": null,
+        "note": "Berkshire Hathaway ขาย Domino's Pizza ออกหมด"
+      }
+    ],
+    "AMZN": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ขาย",
+        "price": null,
+        "note": "Berkshire Hathaway ขาย Amazon ออกหมด"
+      }
+    ],
+    "GOOGL": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Berkshire Hathaway ซื้อ Google Class A เข้าพอร์ต"
+      }
+    ],
+    "GOOG": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Berkshire Hathaway ซื้อ Google Class C เข้าพอร์ต"
+      }
+    ],
+    "DAL": [
+      {
+        "date": "2026-05-16",
+        "videoId": "79z2Q8kKiXo",
+        "videoTitle": "Space X ได้ฤกษ์แล้ว! ส่อง \"พอร์ตปู่ Buffett\" ที่ไม่เหมือนเดิม! MELI ถึง\"ผู้ถือหุ้น\"",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "Berkshire Hathaway เพิ่ม Delta Airlines"
+      }
+    ],
+    "NEE": [
+      {
+        "date": "2026-05-18",
+        "videoId": "CT2QWjtnqSw",
+        "videoTitle": "Nvidia ลุ้น พุ่ง และ ร่วง 3%-7%💥หุ้น ที่\"จารย์\"เข้าโหดมาก🔥\"แอ๊ด\" ช้อนหุ้นนี้ รายใหญ่สั่ง!😲",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Next Era Energy ควบรวม Dominion จะเป็นราชาไฟฟ้าอันดับ 1 โลก มูลค่า 60,000 ล้าน"
+      }
+    ],
+    "D": [
+      {
+        "date": "2026-05-18",
+        "videoId": "CT2QWjtnqSw",
+        "videoTitle": "Nvidia ลุ้น พุ่ง และ ร่วง 3%-7%💥หุ้น ที่\"จารย์\"เข้าโหดมาก🔥\"แอ๊ด\" ช้อนหุ้นนี้ รายใหญ่สั่ง!😲",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Dominion Energy ถูกควบรวมกับ NEE หุ้นปันผลแกร่ง"
+      }
+    ],
+    "VST": [
+      {
+        "date": "2026-05-18",
+        "videoId": "CT2QWjtnqSw",
+        "videoTitle": "Nvidia ลุ้น พุ่ง และ ร่วง 3%-7%💥หุ้น ที่\"จารย์\"เข้าโหดมาก🔥\"แอ๊ด\" ช้อนหุ้นนี้ รายใหญ่สั่ง!😲",
+        "action": "ถือ",
+        "price": null,
+        "note": "Vistra Energy อันดับ 2 สหรัฐ ไม่เจ้ง ถูกกระทบทั้งอุตสาหกรรม"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "มีข่าวดี"
+      }
+    ],
+    "TGLS": [
+      {
+        "date": "2026-05-18",
+        "videoId": "CT2QWjtnqSw",
+        "videoTitle": "Nvidia ลุ้น พุ่ง และ ร่วง 3%-7%💥หุ้น ที่\"จารย์\"เข้าโหดมาก🔥\"แอ๊ด\" ช้อนหุ้นนี้ รายใหญ่สั่ง!😲",
+        "action": "ซื้อ",
+        "price": 39,
+        "note": "Tecnoglass ผู้ถือหุ้นใหญ่ 47% เข้าช้อน วงใน Energy Holding Corp"
+      }
+    ],
+    "ELF": [
+      {
+        "date": "2026-05-18",
+        "videoId": "CT2QWjtnqSw",
+        "videoTitle": "Nvidia ลุ้น พุ่ง และ ร่วง 3%-7%💥หุ้น ที่\"จารย์\"เข้าโหดมาก🔥\"แอ๊ด\" ช้อนหุ้นนี้ รายใหญ่สั่ง!😲",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "e.l.f. Beauty เข้าก่อนไตรมาส ลงมาเยอะแล้ว เก็บยาวลดค่าเฉลี่ย"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ถือ",
+        "price": null,
+        "note": "มีการพูดถึงแต่ไม่ระบุรายละเอียด"
+      }
+    ],
+    "NVDA": [
+      {
+        "date": "2026-05-19",
+        "videoId": "swLFI63fQVM",
+        "videoTitle": "Nvidia เริ่มส่งมอบแล้ว! 10 หุ้นกำไรโหดสุด! หุ้น 8 ไม้รวดของ \"จารย์\" มีดียังไง?",
+        "action": "ถือ",
+        "price": null,
+        "note": "กำลังเร่งส่งมอบ ความเสี่ยงเพิ่มแต่ระยะยาวยังน่าสนใจ รอดูการส่งมอบตามสัญญา"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ถือ",
+        "price": null,
+        "note": "Double Beat แต่ถูกขายทันที ร่วง 2-3% แล้วกลับมาลบเล็กน้อย รอดูไตรมาสหน้า"
+      },
+      {
+        "date": "2026-05-25",
+        "videoId": "pW0zs5wvWro",
+        "videoTitle": "\"พอร์ต\" ยังบวก! เช็คมูลค่าหุ้น 10 ตัวเต็งที่ดีที่สุด! สัปดาห์นี้จะเจออะไรบ้าง?",
+        "action": "ซื้อเพิ่ม",
+        "price": 720,
+        "note": "ราคายุติธรรม 720 แนะนำแบ่งซื้อหลายไม้เพื่อลดความเสี่ยง"
+      },
+      {
+        "date": "2026-05-27",
+        "videoId": "W0oTXLDXkQw",
+        "videoTitle": "เหมือนนัดกันมา! 5 หุ้น รายใหญ่เข้าเก็บแล้ว!! 🔸\"แอ๊ด\" ช้อนหุ้นอะไร? ZS ทำไมร่วงหนัก🟥",
+        "action": "ถือ",
+        "price": null,
+        "note": "เป็นตัวหลักได้ แต่ตอนนี้เข้าตลาดสูงมาก ค่อยๆไปใจเย็นๆ รอแนวรับ"
+      }
+    ],
+    "ADBE": [
+      {
+        "date": "2026-05-19",
+        "videoId": "swLFI63fQVM",
+        "videoTitle": "Nvidia เริ่มส่งมอบแล้ว! 10 หุ้นกำไรโหดสุด! หุ้น 8 ไม้รวดของ \"จารย์\" มีดียังไง?",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Michael Burry ลงทุนเป็นเพื่อนแล้ว มองว่าเป็นโอกาส"
+      }
+    ],
+    "PYPL": [
+      {
+        "date": "2026-05-19",
+        "videoId": "swLFI63fQVM",
+        "videoTitle": "Nvidia เริ่มส่งมอบแล้ว! 10 หุ้นกำไรโหดสุด! หุ้น 8 ไม้รวดของ \"จารย์\" มีดียังไง?",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "Michael Burry เพิ่มทุนหนัก ราคารอแล้ว เงินไหลเข้ากลุ่ม Fintech"
+      }
+    ],
+    "LMND": [
+      {
+        "date": "2026-05-19",
+        "videoId": "swLFI63fQVM",
+        "videoTitle": "Nvidia เริ่มส่งมอบแล้ว! 10 หุ้นกำไรโหดสุด! หุ้น 8 ไม้รวดของ \"จารย์\" มีดียังไง?",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Michael Burry ลงทุนด้วย ราคาปรับลงมาเยอะ มองว่าเป็นโอกาส"
+      }
+    ],
+    "MU": [
+      {
+        "date": "2026-05-20",
+        "videoId": "8urL22po8Ek",
+        "videoTitle": "หุ้นเทคฯ หุ้นชิป ฟื้น!! หุ้น Software เชิญ รับยาช่องแรก! \"แอ๊ด\" เข้าหุ้นใหม่ 2 หุ้น 😲‼️",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ถ้า Samsung เจรจาไม่ได้ ราคาชิปความจำอาจสูงขึ้น เป็นประโยชน์ต่อ MU"
+      },
+      {
+        "date": "2026-05-26",
+        "videoId": "XLQfR4DJ72w",
+        "videoTitle": "คุ้มเสี่ยงมั๊ยเนี่ย!? Space X IPO อันตรายเกินไปแล้ว!!💣 ผู้ถือหุ้น RACE เข้ามาด่วนๆๆๆ💥",
+        "action": "ขาย",
+        "price": null,
+        "note": "อินดิเคเตอร์เตือนแรงช้อนเยอะไป ระยะสั้นควรขาย แต่ระยะยาวยังดี"
+      }
+    ],
+    "ARM": [
+      {
+        "date": "2026-05-20",
+        "videoId": "8urL22po8Ek",
+        "videoTitle": "หุ้นเทคฯ หุ้นชิป ฟื้น!! หุ้น Software เชิญ รับยาช่องแรก! \"แอ๊ด\" เข้าหุ้นใหม่ 2 หุ้น 😲‼️",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นพุ่งมาก มีการกล่าวถึงแต่ไม่มีรายละเอียดความเห็น"
+      },
+      {
+        "date": "2026-05-20",
+        "videoId": "NHgtmh777us",
+        "videoTitle": "อัพเดทล่าสุด 🟢 ALAB, TEM, ARM, LLY || 🔻ONDS, EOSE",
+        "action": "ถือ",
+        "price": 223,
+        "note": "ชิปกินไฟต่ำประสิทธิภาพสูง เหมาะ AI เป้า 300 เหรียญ"
+      },
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ถือ",
+        "price": null,
+        "note": "ผันผวน แต่สำนักมองดีมาก ศักยภาพสูง ขายบางส่วนเก็บกำไร เหลือไว้ต่อ"
+      }
+    ],
+    "ALAB": [
+      {
+        "date": "2026-05-20",
+        "videoId": "NHgtmh777us",
+        "videoTitle": "อัพเดทล่าสุด 🟢 ALAB, TEM, ARM, LLY || 🔻ONDS, EOSE",
+        "action": "ซื้อเพิ่ม",
+        "price": 250,
+        "note": "ทำชิปเชื่อมต่อ Server GPU ความต้องการสูงมาก Scorpio X เป็นเรือธง"
+      },
+      {
+        "date": "2026-05-25",
+        "videoId": "pW0zs5wvWro",
+        "videoTitle": "\"พอร์ต\" ยังบวก! เช็คมูลค่าหุ้น 10 ตัวเต็งที่ดีที่สุด! สัปดาห์นี้จะเจออะไรบ้าง?",
+        "action": "ถือ",
+        "price": null,
+        "note": "น่าเก็บยาวๆ ถ้าเลือก 1 ตัวระหว่าง ALAB กับ IONQ แนะนำ ALAB"
+      }
+    ],
+    "TDOC": [
+      {
+        "date": "2026-05-20",
+        "videoId": "NHgtmh777us",
+        "videoTitle": "อัพเดทล่าสุด 🟢 ALAB, TEM, ARM, LLY || 🔻ONDS, EOSE",
+        "action": "ซื้อ",
+        "price": 42,
+        "note": "AI วินิจฉัยมะเร็ง ร่วมงานกับ BMS แนวรับ 42 น่าสนใจ"
+      }
+    ],
+    "LLY": [
+      {
+        "date": "2026-05-20",
+        "videoId": "NHgtmh777us",
+        "videoTitle": "อัพเดทล่าสุด 🟢 ALAB, TEM, ARM, LLY || 🔻ONDS, EOSE",
+        "action": "ซื้อเพิ่ม",
+        "price": 1000,
+        "note": "กลับมา 1,000 อีกครั้ง บวก 3% ตลาดตอบรับผลทดลอง"
+      }
+    ],
+    "IONQ": [
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นควอนตัม น่าสนใจ แนวโน้มดีขึ้นเรื่อยๆ แต่จำกัดสัดส่วนเพราะความเสี่ยงสูง"
+      },
+      {
+        "date": "2026-05-25",
+        "videoId": "pW0zs5wvWro",
+        "videoTitle": "\"พอร์ต\" ยังบวก! เช็คมูลค่าหุ้น 10 ตัวเต็งที่ดีที่สุด! สัปดาห์นี้จะเจออะไรบ้าง?",
+        "action": "ถือ",
+        "price": null,
+        "note": "น่าเก็บยาวๆไปลุ้น แต่ถ้าเลือกให้เลือก ALAB ก่อน"
+      },
+      {
+        "date": "2026-05-26",
+        "videoId": "XLQfR4DJ72w",
+        "videoTitle": "คุ้มเสี่ยงมั๊ยเนี่ย!? Space X IPO อันตรายเกินไปแล้ว!!💣 ผู้ถือหุ้น RACE เข้ามาด่วนๆๆๆ💥",
+        "action": "ขาย",
+        "price": null,
+        "note": "ต้นทุน 37 กำไรเยอะแล้ว ควรเก็บกำไรก่อน เสี่ยงสูง อาจลงเหลือ 50-100"
+      }
+    ],
+    "WMT": [
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "หลีกเลี่ยง",
+        "price": null,
+        "note": "แนวโน้มไม่ดี มีปัญหาเงินเฟ้อ ราคาหุ้นสูงแล้ว กราฟน่ากลัว รอปรับฐาน"
+      }
+    ],
+    "NFLX": [
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ถือ",
+        "price": null,
+        "note": "รอไตรมาสหน้า ยังไม่มีข่าวดีพอ รอดูการใช้เงิน"
+      }
+    ],
+    "SOFI": [
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ถือ",
+        "price": null,
+        "note": "ยังดีอยู่ พื้นฐานดี รอต่อไป"
+      },
+      {
+        "date": "2026-05-25",
+        "videoId": "pW0zs5wvWro",
+        "videoTitle": "\"พอร์ต\" ยังบวก! เช็คมูลค่าหุ้น 10 ตัวเต็งที่ดีที่สุด! สัปดาห์นี้จะเจออะไรบ้าง?",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "แนวคนาคต พื้นฐานแกร่ง มีอัพไซต์เยอะ ยังไม่อยากขาย"
+      }
+    ],
+    "RKLB": [
+      {
+        "date": "2026-05-21",
+        "videoId": "4VL0SwVQud8",
+        "videoTitle": "NVDA ร่วง! ไม่ได้เงิน... แต่ได้\"ใจ\"‼️รวมราคาเป้าหมาย NVDA 🎯 \"ควอนตัม\" พุ่ง NBIS พุ่ง ELF ดี แต่...",
+        "action": "ขาย",
+        "price": null,
+        "note": "มีคนขาย 2-3 ไม้ตามแผน ไม่ใช่มุมมองแย่ แต่ขายตามวินัยจำกัดสัดส่วน"
+      },
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ซื้อ",
+        "price": 85,
+        "note": "สำนักวิเคราะห์ยกราคาเป้าหมายเป็น $85 backlog แข็งแกร่ง"
+      }
+    ],
+    "FPS": [
+      {
+        "date": "2026-05-22",
+        "videoId": "-VgHWcdNhnU",
+        "videoTitle": "2 หุ้นใหม่ \"จารย์\" ** เหมาะสำหรับคนชอบเสี่ยง ** FPS, CLFD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นใหม่ IPO ผลิตอุปกรณ์ไฟฟ้า Data Center โตแรง 103% backlog 2000 ล้าน"
+      }
+    ],
+    "CLFD": [
+      {
+        "date": "2026-05-22",
+        "videoId": "-VgHWcdNhnU",
+        "videoTitle": "2 หุ้นใหม่ \"จารย์\" ** เหมาะสำหรับคนชอบเสี่ยง ** FPS, CLFD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นเสี่ยง ผลิตอุปกรณ์สาย Fiber สำหรับ AI/Data Center backlog โต 39%"
+      }
+    ],
+    "RXRX": [
+      {
+        "date": "2026-05-25",
+        "videoId": "pW0zs5wvWro",
+        "videoTitle": "\"พอร์ต\" ยังบวก! เช็คมูลค่าหุ้น 10 ตัวเต็งที่ดีที่สุด! สัปดาห์นี้จะเจออะไรบ้าง?",
+        "action": "หลีกเลี่ยง",
+        "price": null,
+        "note": "หุ้นเก็งกำไร high risk high return ต้องจำกัดสัดส่วน ยังไม่แนะนำ"
+      }
+    ],
+    "RACE": [
+      {
+        "date": "2026-05-26",
+        "videoId": "XLQfR4DJ72w",
+        "videoTitle": "คุ้มเสี่ยงมั๊ยเนี่ย!? Space X IPO อันตรายเกินไปแล้ว!!💣 ผู้ถือหุ้น RACE เข้ามาด่วนๆๆๆ💥",
+        "action": "ถือ",
+        "price": null,
+        "note": "Ferrari พื้นฐานแข็งแกร่งแต่วันนี้เปราะบาง ตลาดมีขึ้นมีลง"
+      }
+    ],
+    "ZS": [
+      {
+        "date": "2026-05-27",
+        "videoId": "W0oTXLDXkQw",
+        "videoTitle": "เหมือนนัดกันมา! 5 หุ้น รายใหญ่เข้าเก็บแล้ว!! 🔸\"แอ๊ด\" ช้อนหุ้นอะไร? ZS ทำไมร่วงหนัก🟥",
+        "action": "หลีกเลี่ยง",
+        "price": null,
+        "note": "ร่วงหนักมาก ไตรมาสออกมาไม่ดี กลุ่ม Cyber Security โดน"
+      },
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "พื้นฐานแข็งแกร่ง อนาคตโอเค แนะนำเก็บที่ $15-17"
+      }
+    ],
+    "ONDS": [
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "พุ่งพรวด ถึง $13 แล้ว มีข่าวดี แนะนำเก็บไว้"
+      }
+    ],
+    "AVAV": [
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ซื้อ",
+        "price": 212,
+        "note": "กินเรียบ ราคา $212 ถึง 200 แล้ว ขายทำกำไรได้"
+      }
+    ],
+    "SNOW": [
+      {
+        "date": "2026-05-28",
+        "videoId": "lDXiBlKx5ks",
+        "videoTitle": "ได้เวลา \"กลุ่มโดรน\" ONDS, KTOS, AVAV 💰 | SNOW, ZS, NBIS, AXON, NOW, IBM, AVGO, ORCL, DELL, PRCT, WMT",
+        "action": "ถือ",
+        "price": null,
+        "note": "ยังไม่ถึงที่ของเค้า พื้นฐานแข็งแกร่ง อนาคตโอเค"
+      }
+    ]
+  }
 }

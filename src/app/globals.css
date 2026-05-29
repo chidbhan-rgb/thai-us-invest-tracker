@@ -2,19 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
-
 :root {
-  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-mono: 'SF Mono', 'Fira Code', 'Courier New', monospace;
 }
 
 body {
   font-family: var(--font-mono);
-  background-color: #020617;
+  background-color: #080808;
   color: #f8fafc;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0f172a; }
-::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }

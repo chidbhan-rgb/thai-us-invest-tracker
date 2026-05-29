@@ -1,100 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import {
-  ComposedChart,
-  Line,
-  Scatter,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-  ReferenceLine,
-  CartesianGrid,
-} from "recharts";
+import { useState, useRef } from "react";
 import { ACTION_META, type Mention, type PricePoint } from "@/lib/types";
-
-// ─── Custom mention pin rendered inside Scatter ───────────────
-function MentionDot(props: {
-  cx?: number;
-  cy?: number;
-  payload?: MentionPoint;
-  onHover: (m: MentionPoint | null) => void;
-  hovered: MentionPoint | null;
-}) {
-  const { cx = 0, cy = 0, payload, onHover, hovered } = props;
-  if (!payload) return null;
-  const ac = ACTION_META[payload.action] ?? ACTION_META["ถือ"];
-  const isHovered = hovered?.date === payload.date && hovered?.action === payload.action;
-
-  return (
-    <g
-      onMouseEnter={() => onHover(payload)}
-      onMouseLeave={() => onHover(null)}
-      style={{ cursor: "pointer" }}
-    >
-      {/* dashed vertical line from top to circle */}
-      <line
-        x1={cx} y1={10} x2={cx} y2={cy - 12}
-        stroke={ac.bg} strokeWidth={1} strokeDasharray="3,3" opacity={0.5}
-      />
-      {/* action chip at top */}
-      <rect x={cx - 16} y={2} width={32} height={14} rx={4} fill={ac.bg} opacity={0.9} />
-      <text x={cx} y={13} textAnchor="middle" fill={ac.text} fontSize={8} fontWeight="bold" fontFamily="monospace">
-        {ac.label}
-      </text>
-      {/* pin circle */}
-      <circle
-        cx={cx} cy={cy - 12} r={isHovered ? 9 : 7}
-        fill={ac.bg} stroke="#0f172a" strokeWidth={2}
-        style={{ transition: "r 0.15s" }}
-      />
-    </g>
-  );
-}
-
-// ─── Tooltip for hovered mention ─────────────────────────────
-function MentionTooltipOverlay({ mention, chartRight }: { mention: MentionPoint; chartRight: boolean }) {
-  const ac = ACTION_META[mention.action] ?? ACTION_META["ถือ"];
-  return (
-    <div
-      className={`absolute top-8 ${chartRight ? "right-4" : "left-4"} z-10 bg-slate-950 border rounded-xl p-3 text-xs font-mono shadow-xl`}
-      style={{ borderColor: ac.bg, minWidth: 220, maxWidth: 280 }}
-    >
-      <div className="text-slate-400 mb-1">{mention.date}</div>
-      <div className="flex items-center gap-2 mb-2">
-        <span className="px-2 py-0.5 rounded font-black text-xs" style={{ background: ac.bg, color: ac.text }}>
-          {ac.label}
-        </span>
-        {mention.price != null && (
-          <span className="text-amber-400 font-bold">${mention.price}</span>
-        )}
-      </div>
-      <div className="text-slate-300 leading-snug">{mention.note}</div>
-    </div>
-  );
-}
-
-// ─── Custom price tooltip ─────────────────────────────────────
-function PriceTooltip({ active, payload, label }: {
-  active?: boolean;
-  payload?: Array<{ value: number }>;
-  label?: number;
-}) {
-  if (!active || !payload?.length) return null;
-  const date = label ? new Date(label).toISOString().slice(0, 10) : "";
-  return (
-    <div className="bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs font-mono">
-      <div className="text-slate-400">{date}</div>
-      <div className="text-white font-bold">${payload[0].value.toFixed(2)}</div>
-    </div>
-  );
-}
-
-interface MentionPoint extends Mention {
-  timestamp: number;
-  chartPrice: number;
-}
 
 interface Props {
   ticker: string;
@@ -103,138 +10,224 @@ interface Props {
 }
 
 export default function StockChart({ ticker, prices, mentions }: Props) {
-  const [hoveredMention, setHoveredMention] = useState<MentionPoint | null>(null);
-
-  const handleHover = useCallback((m: MentionPoint | null) => setHoveredMention(m), []);
+  const [hover, setHover] = useState<PricePoint | null>(null);
+  const [pin, setPin] = useState<number | null>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
 
   if (!prices.length) {
     return (
-      <div className="flex items-center justify-center h-48 bg-slate-900 border border-slate-800 rounded-xl text-slate-600 text-sm">
+      <div
+        className="flex items-center justify-center rounded-2xl text-sm"
+        style={{ height: 180, background: "#0a0a0a", color: "#374151" }}
+      >
         กำลังโหลดราคา…
       </div>
     );
   }
 
-  // Build chart data — timestamp as numeric x-axis
-  const chartData = prices.map((p) => ({
-    timestamp: new Date(p.date).getTime(),
-    price: p.price,
-  }));
+  const W = 900, H = 260;
+  const PL = 12, PR = 12, PT = 20, PB = 32;
+  const cW = W - PL - PR, cH = H - PT - PB;
 
-  // Map each mention to the closest price on or after its date
-  const mentionPoints: MentionPoint[] = mentions.map((m) => {
-    const ts = new Date(m.date).getTime();
-    const closest = prices.find((p) => p.date >= m.date) ?? prices[prices.length - 1];
-    return { ...m, timestamp: ts, chartPrice: closest.price };
-  });
+  const minP = Math.min(...prices.map((p) => p.price)) * 0.98;
+  const maxP = Math.max(...prices.map((p) => p.price)) * 1.02;
+  const minD = new Date(prices[0].date).getTime();
+  const maxD = new Date(prices[prices.length - 1].date).getTime();
 
-  const firstPrice = prices[0].price;
-  const lastPrice = prices[prices.length - 1].price;
-  const pctChange = (((lastPrice - firstPrice) / firstPrice) * 100).toFixed(1);
-  const isUp = lastPrice >= firstPrice;
-  const lineColor = isUp ? "#10b981" : "#ef4444";
+  const xS = (d: string) =>
+    PL + ((new Date(d).getTime() - minD) / (maxD - minD)) * cW;
+  const yS = (p: number) =>
+    PT + cH - ((p - minP) / (maxP - minP)) * cH;
 
-  const fromLabel = new Date(prices[0].date).toLocaleDateString("th-TH", { day: "numeric", month: "short", year: "2-digit" });
+  const path = prices
+    .map((p, i) => `${i === 0 ? "M" : "L"}${xS(p.date).toFixed(1)},${yS(p.price).toFixed(1)}`)
+    .join(" ");
+  const last = prices[prices.length - 1];
+  const area =
+    path +
+    ` L${xS(last.date).toFixed(1)},${(PT + cH).toFixed(1)} L${PL},${(PT + cH).toFixed(1)} Z`;
 
-  // x-axis: month labels
-  const monthTicks: number[] = [];
-  const seenMonths = new Set<string>();
+  const first = prices[0].price;
+  const lastPrice = last.price;
+  const pct = ((lastPrice - first) / first) * 100;
+  const up = pct >= 0;
+  const lineColor = up ? "#22c55e" : "#ef4444";
+
+  // Month tick positions
+  const months: PricePoint[] = [];
+  const seen = new Set<string>();
   prices.forEach((p) => {
     const m = p.date.slice(0, 7);
-    if (!seenMonths.has(m)) {
-      seenMonths.add(m);
-      monthTicks.push(new Date(p.date).getTime());
-    }
+    if (!seen.has(m)) { seen.add(m); months.push(p); }
   });
 
-  const renderMentionDot = useCallback(
-    (props: object) =>
-      MentionDot({ ...(props as { cx?: number; cy?: number; payload?: MentionPoint }), onHover: handleHover, hovered: hoveredMention }),
-    [handleHover, hoveredMention]
-  );
-
-  // Determine if hoveredMention is in the right half (position tooltip on left)
-  const midTs = chartData.length ? chartData[Math.floor(chartData.length / 2)].timestamp : 0;
-  const tooltipOnRight = hoveredMention ? hoveredMention.timestamp < midTs : false;
+  const fmt = (p: number) =>
+    p.toLocaleString("en-US", { minimumFractionDigits: p < 50 ? 2 : 0 });
 
   return (
     <div>
       {/* Price header */}
-      <div className="flex items-baseline gap-3 mb-3 px-1">
-        <span className="text-3xl font-black text-white">${lastPrice.toFixed(0)}</span>
-        <span className={`text-sm font-bold ${isUp ? "text-emerald-400" : "text-red-400"}`}>
-          {isUp ? "▲" : "▼"} {Math.abs(Number(pctChange))}% ตั้งแต่ {fromLabel}
-        </span>
-        <span className="text-xs text-slate-500 ml-auto">Yahoo Finance</span>
+      <div className="flex items-baseline justify-between mb-5 px-0.5">
+        <div>
+          <div className="text-4xl font-black tracking-tight text-white">
+            ${fmt(lastPrice)}
+          </div>
+          <div className={`text-sm mt-0.5 font-medium ${up ? "text-emerald-400" : "text-red-400"}`}>
+            {up ? "▲" : "▼"} {Math.abs(pct).toFixed(1)}%
+            <span className="ml-2 text-xs" style={{ color: "#4b5563" }}>
+              since {new Date(prices[0].date).toLocaleDateString("en-US", { month: "short", year: "2-digit" })}
+            </span>
+          </div>
+        </div>
+        <div className="text-right text-xs leading-relaxed" style={{ color: "#4b5563" }}>
+          <div>{mentions.length} mention{mentions.length !== 1 ? "s" : ""}</div>
+          {mentions.length > 0 && (
+            <div>last: {mentions[mentions.length - 1].date}</div>
+          )}
+        </div>
       </div>
 
-      <div className="relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800">
-        {hoveredMention && (
-          <MentionTooltipOverlay mention={hoveredMention} chartRight={tooltipOnRight} />
-        )}
-        <ResponsiveContainer width="100%" height={320}>
-          <ComposedChart data={chartData} margin={{ top: 24, right: 16, bottom: 8, left: 8 }}>
-            <defs>
-              <linearGradient id={`area-${ticker}`} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={lineColor} stopOpacity={0.2} />
-                <stop offset="100%" stopColor={lineColor} stopOpacity={0} />
-              </linearGradient>
-            </defs>
+      {/* SVG chart */}
+      <div className="rounded-2xl overflow-hidden" style={{ background: "#0a0a0a" }}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          width="100%"
+          ref={svgRef}
+          onMouseMove={(e) => {
+            const rect = svgRef.current?.getBoundingClientRect();
+            if (!rect) return;
+            const mx = (e.clientX - rect.left) * (W / rect.width);
+            const pct = (mx - PL) / cW;
+            if (pct < 0 || pct > 1) { setHover(null); return; }
+            const idx = Math.round(pct * (prices.length - 1));
+            setHover(prices[Math.max(0, Math.min(idx, prices.length - 1))]);
+          }}
+          onMouseLeave={() => setHover(null)}
+        >
+          <defs>
+            <linearGradient id={`g-${ticker}`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={lineColor} stopOpacity="0.15" />
+              <stop offset="100%" stopColor={lineColor} stopOpacity="0" />
+            </linearGradient>
+          </defs>
 
-            <CartesianGrid stroke="#1e293b" strokeDasharray="0" vertical={false} />
+          {/* Area fill */}
+          <path d={area} fill={`url(#g-${ticker})`} />
+          {/* Price line */}
+          <path d={path} fill="none" stroke={lineColor} strokeWidth="1.5" strokeLinejoin="round" />
 
-            <XAxis
-              dataKey="timestamp"
-              type="number"
-              scale="time"
-              domain={["dataMin", "dataMax"]}
-              ticks={monthTicks}
-              tickFormatter={(ts) =>
-                new Date(ts).toLocaleDateString("th-TH", { month: "short" })
-              }
-              tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }}
-              axisLine={false}
-              tickLine={false}
-            />
-            <YAxis
-              domain={["auto", "auto"]}
-              tick={{ fill: "#475569", fontSize: 10, fontFamily: "monospace" }}
-              tickFormatter={(v) => `$${Math.round(v)}`}
-              axisLine={false}
-              tickLine={false}
-              width={56}
-            />
+          {/* Month labels */}
+          {months.map((p, i) => (
+            <text
+              key={i}
+              x={xS(p.date)}
+              y={H - 8}
+              textAnchor="middle"
+              fill="#374151"
+              fontSize="9"
+              fontFamily="monospace"
+            >
+              {new Date(p.date).toLocaleDateString("en-US", { month: "short" })}
+            </text>
+          ))}
 
-            <Tooltip content={<PriceTooltip />} />
+          {/* Mention pins */}
+          {mentions.map((m, i) => {
+            const px = xS(m.date);
+            // Find closest price point by date
+            const closest = prices.reduce((a, b) =>
+              Math.abs(new Date(b.date).getTime() - new Date(m.date).getTime()) <
+              Math.abs(new Date(a.date).getTime() - new Date(m.date).getTime())
+                ? b : a
+            );
+            const py = yS(closest.price);
+            const ac = ACTION_META[m.action] ?? ACTION_META["ถือ"];
+            const isActive = pin === i;
 
-            <Line
-              type="monotone"
-              dataKey="price"
-              stroke={lineColor}
-              strokeWidth={2}
-              dot={false}
-              activeDot={{ r: 4, fill: lineColor, stroke: "#0f172a", strokeWidth: 2 }}
-            />
+            // Keep tooltip box inside chart bounds
+            const bw = 190, bh = 68;
+            const bx = Math.min(Math.max(px - bw / 2, PL), W - PR - bw);
+            const by = Math.max(py - bh - 16, PT);
 
-            {/* Mention pins as Scatter */}
-            <Scatter
-              data={mentionPoints}
-              dataKey="chartPrice"
-              shape={renderMentionDot}
-              isAnimationActive={false}
-            />
-
-            {/* Reference lines for each mention date */}
-            {mentionPoints.map((m, i) => (
-              <ReferenceLine
+            return (
+              <g
                 key={i}
-                x={m.timestamp}
-                stroke="transparent"
-                strokeWidth={0}
-              />
-            ))}
-          </ComposedChart>
-        </ResponsiveContainer>
+                onClick={() => setPin(isActive ? null : i)}
+                style={{ cursor: "pointer" }}
+              >
+                {/* Dashed vertical line */}
+                <line
+                  x1={px} y1={PT} x2={px} y2={py - 8}
+                  stroke={ac.color} strokeWidth="1" strokeDasharray="2,3" opacity="0.4"
+                />
+                {/* Pin circle */}
+                <circle
+                  cx={px} cy={py - 8} r={isActive ? 5.5 : 4}
+                  fill={ac.color} stroke="#0a0a0a" strokeWidth="1.5"
+                  style={{ transition: "r 0.1s" }}
+                />
+
+                {/* Tooltip popup on click */}
+                {isActive && (
+                  <g>
+                    <rect
+                      x={bx} y={by} width={bw} height={bh} rx={8}
+                      fill="#111" stroke={ac.color} strokeWidth="1" opacity="0.97"
+                    />
+                    <text x={bx + 12} y={by + 18} fill="#6b7280" fontSize="9" fontFamily="monospace">
+                      {m.date}
+                    </text>
+                    {/* Action badge */}
+                    <rect x={bx + 12} y={by + 24} width={34} height={14} rx={3} fill={ac.color} />
+                    <text
+                      x={bx + 29} y={by + 34}
+                      textAnchor="middle" fill="#000" fontSize="8" fontWeight="bold" fontFamily="monospace"
+                    >
+                      {ac.label}
+                    </text>
+                    {/* Price */}
+                    {m.price != null && (
+                      <text x={bx + 52} y={by + 34} fill="#d1d5db" fontSize="9" fontFamily="monospace">
+                        ${m.price}
+                      </text>
+                    )}
+                    {/* Note */}
+                    <text x={bx + 12} y={by + 52} fill="#6b7280" fontSize="8.5" fontFamily="monospace">
+                      {m.note.slice(0, 30)}{m.note.length > 30 ? "…" : ""}
+                    </text>
+                    {/* Video title hint */}
+                    <text x={bx + 12} y={by + 63} fill="#374151" fontSize="7.5" fontFamily="monospace">
+                      ▶ {m.videoTitle.slice(0, 26)}{m.videoTitle.length > 26 ? "…" : ""}
+                    </text>
+                  </g>
+                )}
+              </g>
+            );
+          })}
+
+          {/* Crosshair on hover */}
+          {hover && (() => {
+            const hx = xS(hover.date);
+            const hy = yS(hover.price);
+            return (
+              <g pointerEvents="none">
+                <line x1={hx} y1={PT} x2={hx} y2={PT + cH} stroke="#1f2937" strokeWidth="1" />
+                <circle cx={hx} cy={hy} r={3.5} fill={lineColor} stroke="#0a0a0a" strokeWidth="1.5" />
+                <rect x={hx - 36} y={hy - 22} width={72} height={18} rx={4} fill="#111" />
+                <text
+                  x={hx} y={hy - 10}
+                  textAnchor="middle" fill="#e5e7eb" fontSize="10" fontFamily="monospace"
+                >
+                  ${fmt(hover.price)}
+                </text>
+              </g>
+            );
+          })()}
+        </svg>
+      </div>
+
+      <div className="text-xs mt-2 text-right" style={{ color: "#374151" }}>
+        คลิกที่หมุด = ดูรายละเอียด
       </div>
     </div>
   );
