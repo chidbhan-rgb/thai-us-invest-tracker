@@ -255,8 +255,8 @@ async function main() {
     // Fetch transcript
     const transcript = await fetchTranscript(video.id);
     if (!transcript) {
-      data.processedVideos.push(video.id);
-      continue;
+      console.log(`  ⏭️  Skipping (no transcript yet) — will retry next run`);
+      continue; // do NOT mark as processed so we retry tomorrow
     }
     console.log(`   Transcript: ${transcript.length} chars`);
 
