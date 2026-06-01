@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30",
+  "lastUpdated": "2026-06-01",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -16,7 +16,8 @@
     "W0oTXLDXkQw",
     "SlDndUJF0HM",
     "lDXiBlKx5ks",
-    "XeAYFVds2S4"
+    "XeAYFVds2S4",
+    "42t_4DDxDSQ"
   ],
   "mentions": {
     "EOSE": [
@@ -945,6 +946,14 @@
         "action": "ถือ",
         "price": null,
         "note": "ไตรมาสแรกรายได้โต 43% แต่ขาดทุนเพิ่ม คาดทุกไตรมาสจะโต ไม่ขาดทุนภายในปีหน้า"
+      },
+      {
+        "date": "2026-05-31",
+        "videoId": "42t_4DDxDSQ",
+        "videoTitle": "เปิดพอร์ตหุ้น | 💻\"เว็บช่อง\" | หุ้นรอขาย | หุ้นใหญ่กำไร/ขาดทุนเยอะสุด | หุ้นกำลังฟื้น",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นที่ไม่มั่นใจมาก แนะนำลงไม้ละ 10 เหรียญ คิดว่าจะขึ้นได้"
       }
     ],
     "MU": [
@@ -1221,6 +1230,14 @@
         "action": "ถือ",
         "price": null,
         "note": "อยู่ในพอร์ตระยะยาว 10 ปี แนะนำให้ถือต่อ"
+      },
+      {
+        "date": "2026-05-31",
+        "videoId": "42t_4DDxDSQ",
+        "videoTitle": "เปิดพอร์ตหุ้น | 💻\"เว็บช่อง\" | หุ้นรอขาย | หุ้นใหญ่กำไร/ขาดทุนเยอะสุด | หุ้นกำลังฟื้น",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "หุ้นที่มั่นใจ แนะนำลงไม้ละ 100 เหรียญ เป็นหุ้นที่รู้จักและมั่นใจว่าจะเติบโตต่อ"
       }
     ],
     "SPGI": [
@@ -2602,7 +2619,7 @@
     "FLYW": "Defense/Drone",
     "TSLA": "Consumer",
     "AAPL": "Consumer",
-    "CLPT": "Healthcare",
+    "CLPT": "Other",
     "MU": "AI/Chip",
     "SPCX": "Defense/Drone",
     "V": "Fintech",
