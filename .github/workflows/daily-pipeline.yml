@@ -3,8 +3,8 @@ name: Daily Stock Pipeline
 
 on:
   schedule:
-    # 8:00 AM Bangkok (UTC+7) = 01:00 UTC
-    - cron: "0 1 * * *"
+    # 4:00 AM Bangkok (UTC+7) = 21:00 UTC previous day
+    - cron: "0 21 * * *"
   workflow_dispatch:  # allow manual trigger
 
 jobs:
