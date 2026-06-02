@@ -60,6 +60,19 @@ async function fetchRSS() {
 // ─── Fetch YouTube transcript ─────────────────────────────────
 
 async function fetchTranscript(videoId) {
+  // Check for manual transcript first
+  const manualTranscriptPath = join(__dirname, `../data/transcripts/${videoId}.txt`);
+  if (existsSync(manualTranscriptPath)) {
+    try {
+      const content = readFileSync(manualTranscriptPath, "utf-8");
+      console.log(`   Using manual transcript from data/transcripts/${videoId}.txt`);
+      return content;
+    } catch (err) {
+      console.warn(`  ⚠️  Failed to read manual transcript: ${err.message}`);
+    }
+  }
+
+  // Fall back to YouTube transcript API
   try {
     // Try Thai first, fall back to auto-generated
     const segments = await YoutubeTranscript.fetchTranscript(videoId, {

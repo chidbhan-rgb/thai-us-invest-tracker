@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -16,8 +16,8 @@
     "W0oTXLDXkQw",
     "SlDndUJF0HM",
     "lDXiBlKx5ks",
-    "XeAYFVds2S4",
-    "42t_4DDxDSQ"
+    "42t_4DDxDSQ",
+    "XeAYFVds2S4"
   ],
   "mentions": {
     "EOSE": [
@@ -386,6 +386,14 @@
         "action": "ถือ",
         "price": 60,
         "note": "หวัง $60 แต่แตะแค่แป๊บเดียว, ยังติดตาม"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": 60,
+        "note": "Organ transport, long-term growth 2027"
       }
     ],
     "COST": [
@@ -612,6 +620,14 @@
         "action": "ซื้อ",
         "price": 365,
         "note": "หุ่นยนต์ผ่าตัด ไตรมาสไม่โดดเด่น แต่ยังเป็นเจ้าตลาด รอช้อนที่ $365"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": 400,
+        "note": "Robot surgery leader, pullback"
       }
     ],
     "PLTR": [
@@ -1194,6 +1210,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "งบน้อยเน้นหุ้นที่รู้จัก แนะนำ Google กับ Nvidia"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": 360,
+        "note": "Pullback to support, EMA 360"
       }
     ],
     "DAL": [
@@ -1808,6 +1832,14 @@
         "action": "หลีกเลี่ยง",
         "price": null,
         "note": "ลงมาใกล้ EMA 200 พลาดไตรมาส แต่ไม่ได้แย่มาก"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ถือ",
+        "price": 111,
+        "note": "Consolidation after rally, support 111"
       }
     ],
     "PANW": [
@@ -2328,6 +2360,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ซอฟต์แวร์รถยนต์QNXแข็งแกร่ง+Cybersecurity ทำจุดสูงสุดปี รายใหญ่สนใจ"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Cybersecurity/QNX pivot, higher risk"
       }
     ],
     "ORCL": [
@@ -2346,6 +2386,14 @@
         "action": "ซื้อเพิ่ม",
         "price": 185,
         "note": "ทะลุ 200 แล้ว ค่าเฉลี่ย 173 เข้าได้ต่อ ยังไปได้อีกเยอะ RPO/Stargate/Data Center"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ถือ",
+        "price": 234,
+        "note": "Awaiting earnings, strong backlog"
       }
     ],
     "ASTS": [
@@ -2589,6 +2637,36 @@
         "price": 8,
         "note": "โดรนเล็ก Black Hornet บินเป็นฝูง ขยายไปเรือผิวน้ำไร้คนขับ ขึ้น 25%"
       }
+    ],
+    "RXT": [
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": 4.2,
+        "note": "Cloud services, AMD relationship, support 4.2"
+      }
+    ],
+    "NLST": [
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Server memory for AI growth"
+      }
+    ],
+    "CRWV": [
+      {
+        "date": "2026-06-01",
+        "videoId": "XeAYFVds2S4",
+        "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
+        "action": "ซื้อ",
+        "price": 114,
+        "note": "NVIDIA-backed, Vera Rubin chips"
+      }
     ]
   },
   "sectors": {
@@ -2716,6 +2794,9 @@
     "XE": "Energy",
     "VRTX": "Healthcare",
     "AXON": "Defense/Drone",
-    "RCAT": "Defense/Drone"
+    "RCAT": "Defense/Drone",
+    "RXT": "Software/Cloud",
+    "NLST": "AI/Chip",
+    "CRWV": "AI/Chip"
   }
 }
