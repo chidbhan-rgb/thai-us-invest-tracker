@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02",
+  "lastUpdated": "2026-06-03",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -17,7 +17,8 @@
     "SlDndUJF0HM",
     "lDXiBlKx5ks",
     "42t_4DDxDSQ",
-    "XeAYFVds2S4"
+    "XeAYFVds2S4",
+    "NUjtl3ZBzZ8"
   ],
   "mentions": {
     "EOSE": [
@@ -790,6 +791,14 @@
         "action": "ซื้อ",
         "price": 212,
         "note": "แนวรับ $212 ขาย $236 ได้ 11%, RSI ลงมาแล้ว แต่ยังสูงอยู่"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "NUjtl3ZBzZ8",
+        "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
+        "action": "ซื้อ",
+        "price": 227,
+        "note": "AI demand, target 300, strong momentum"
       }
     ],
     "RKLB": [
@@ -1218,6 +1227,14 @@
         "action": "ซื้อ",
         "price": 360,
         "note": "Pullback to support, EMA 360"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "NUjtl3ZBzZ8",
+        "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
+        "action": "ซื้อ",
+        "price": 265,
+        "note": "AI infra investment, support 350/335/320"
       }
     ],
     "DAL": [
@@ -2432,6 +2449,14 @@
         "action": "ถือ",
         "price": null,
         "note": "มีการฝากติดตามพร้อมกับ SOFI"
+      },
+      {
+        "date": "2026-06-01",
+        "videoId": "NUjtl3ZBzZ8",
+        "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
+        "action": "ถือ",
+        "price": null,
+        "note": "Insider buy, high volatility, trim on gains"
       }
     ],
     "PFE": [
@@ -2667,6 +2692,26 @@
         "price": 114,
         "note": "NVIDIA-backed, Vera Rubin chips"
       }
+    ],
+    "MRVL": [
+      {
+        "date": "2026-06-01",
+        "videoId": "NUjtl3ZBzZ8",
+        "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
+        "action": "ซื้อ",
+        "price": 250,
+        "note": "Marvell AI infra, NVIDIA partnership, support"
+      }
+    ],
+    "CRDO": [
+      {
+        "date": "2026-06-01",
+        "videoId": "NUjtl3ZBzZ8",
+        "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
+        "action": "ซื้อ",
+        "price": 200,
+        "note": "Revenue up 157%, long-term growth play 2028"
+      }
     ]
   },
   "sectors": {
@@ -2797,6 +2842,8 @@
     "RCAT": "Defense/Drone",
     "RXT": "Software/Cloud",
     "NLST": "AI/Chip",
-    "CRWV": "AI/Chip"
+    "CRWV": "AI/Chip",
+    "MRVL": "AI/Chip",
+    "CRDO": "AI/Chip"
   }
 }
