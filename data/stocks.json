@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03",
+  "lastUpdated": "2026-06-04",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -17,7 +17,9 @@
     "lDXiBlKx5ks",
     "42t_4DDxDSQ",
     "XeAYFVds2S4",
-    "NUjtl3ZBzZ8"
+    "NUjtl3ZBzZ8",
+    "SlDndUJF0HM",
+    "MBTj6g3_nvU"
   ],
   "mentions": {
     "EOSE": [
@@ -94,6 +96,22 @@
         "action": "ซื้อ",
         "price": 60,
         "note": "เร่งผลิตล็อต 2 XQ-58 Valkyrie โดรน Low Cost คู่กับ F-35/F-22"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "ยังไม่เข้า GAP เหลืออีกนิดถึงจุด Take Profit"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 51,
+        "note": "กลุ่มโดรนเน้นเก็บต่อไป รอ $51-52 หรือ $45 ขาย $60-64"
       }
     ],
     "AVAV": [
@@ -136,6 +154,22 @@
         "action": "ซื้อ",
         "price": 212,
         "note": "กล่าวถึงราคา 212 และว่ากินเรียบแล้ว รอ 200 แน่นอน ถือพอร์ตสวิง"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 197,
+        "note": "เชื่อมั่นจะกลับไป 250 เข้าที่ 197 ตื้นไป 176, 157 ขาย 220-250"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 176,
+        "note": "โดรนมั่นคงสุด แนวรับ $176, $157, $143 ขายใกล้ $200"
       }
     ],
     "ONDS": [
@@ -202,6 +236,14 @@
         "action": "ซื้อ",
         "price": 10,
         "note": "ได้ซอฟต์แวร์ระดับเทพจากอิสราเอล ทะลุต้าน ขึ้น 20%"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ข่าวดี เดือนพฤษภาคมปิดยอด 30 ล้าน ดีมากๆ"
       }
     ],
     "MELI": [
@@ -294,6 +336,14 @@
         "action": "ซื้อเพิ่ม",
         "price": 600,
         "note": "ทะลุ 600 ค่าเฉลี่ย 600 แนวรับ 600, 583, 550 ขายที่ 660-730 เก็บยาว"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 600,
+        "note": "แนวรับ $600, $583, $550 ขาย $700 (กำไร 16-18%) มีโมเดลทำเงินชัด AI ช่วยโฆษณา"
       }
     ],
     "CEG": [
@@ -388,12 +438,28 @@
         "note": "หวัง $60 แต่แตะแค่แป๊บเดียว, ยังติดตาม"
       },
       {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "FDA อนุมัติชุดตรวจมะเร็ง แนวต้าน 53 แนวรับ 50, 42"
+      },
+      {
         "date": "2026-06-01",
         "videoId": "XeAYFVds2S4",
         "videoTitle": "ลูกพี่ช่วยดันทั้งกลุ่ม! NBIS, CRWV, ARM, DELL, NOW, CRM | 10 หุ้นเล็ก แต่ Rating สูง!",
         "action": "ซื้อ",
         "price": 60,
         "note": "Organ transport, long-term growth 2027"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "เหมาะเก็บยาว เครื่อง OCS (ไต) ปีหน้าเก็บเกี่ยว ปีนี้ปีลงทุน ไร้คู่แข่ง"
       }
     ],
     "COST": [
@@ -412,6 +478,22 @@
         "action": "ถือ",
         "price": null,
         "note": "คาดเติบโต 10% น่าจะไม่มีปัญหา แต่ราคาวิ่งอยู่ 900-1000 ไม่ไปไหน"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 936,
+        "note": "ลงมาแนวรับแล้ว น่าเข้าไม้แรก ต้องมีไม้ต่อไป รอ 936, 900 ขายที่ 975-1000"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 900,
+        "note": "พื้นฐานดีร่วงมารับ แนวรับ $939, $900, $880"
       }
     ],
     "VST": [
@@ -670,6 +752,22 @@
         "action": "ซื้อ",
         "price": 120,
         "note": "ฟอร์มตกใกล้เลือกทาง DCA ที่ 120-123, 105 เสี่ยงสุด 128"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 128,
+        "note": "แนวรับ 128-130 รอหลายรอบ เลือกทางขึ้นแล้ว เป้า 160-170"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 128,
+        "note": "ถูกกดดันจากข่าวสัญญาอังกฤษ, มูลค่าสูงเกินไป, แนวรับ $128"
       }
     ],
     "NVIS": [
@@ -716,6 +814,22 @@
         "action": "ซื้อ",
         "price": 65,
         "note": "ปรับคาดการณ์ไตรมาสขึ้นเยอะ สำนักให้ราคาเป้า 85 แนวรับ 61/55/47"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "สำนักปรับราคาเป้า $85 รายใหญ่เข้าเก็บ จากติดลบเป็นบวกหนัก"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 70,
+        "note": "เก็บกำไรไปแล้ว รอลงมา 70/66/61 ถึงจุดเก็บ ใกล้ประกาศไตรมาส"
       }
     ],
     "NVDA": [
@@ -792,12 +906,28 @@
         "note": "แนวรับ $212 ขาย $236 ได้ 11%, RSI ลงมาแล้ว แต่ยังสูงอยู่"
       },
       {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "มีในพอร์ตที่ค่าเฉลี่ย 142 ดอลลาร์ (ไม่ใช่ราคาแนะนำซื้อ เป็นต้นทุนที่ถืออยู่)"
+      },
+      {
         "date": "2026-06-01",
         "videoId": "NUjtl3ZBzZ8",
         "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
         "action": "ซื้อ",
         "price": 227,
         "note": "AI demand, target 300, strong momentum"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 1127,
+        "note": "ร่วงแตะ EMA แล้ว แนวรับ $1127, $1049, $975 ขายที่ $1200-1400"
       }
     ],
     "RKLB": [
@@ -880,6 +1010,22 @@
         "action": "ซื้อ",
         "price": 85,
         "note": "สำนักวิเคราะห์ยกราคาเป้าหมายขึ้นเป็น 85 จากเดิม 70 กว่า งานรอในมือเยอะ"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "กำลังลุ้นกำไร แต่พูดว่า \"เสียดายถ้าไม่ได้เก็บ\" แต่ก็ล็อคกำไรไว้แล้ว"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 115,
+        "note": "ถึงแนวรับ เข้า $115 ขาย $132 ลุ้นจรวดนิวตรอน รอ Space X"
       }
     ],
     "SMCI": [
@@ -1044,6 +1190,22 @@
         "action": "ถือ",
         "price": null,
         "note": "ทรัมป์พูดถึง ทำให้ขึ้นได้เก็บกำไร"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ซื้อตั้งแต่ 2023 บวก 766% ได้รับอัปเกรดเป้าหมาย 1750"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "แอดขายเมื่อวาน ซื้อกลับวันนี้ เข้าให้ดอย ค่อยบิให้อ้วน (กลยุทธ์ส่วนตัว)"
       }
     ],
     "SPCX": [
@@ -1080,6 +1242,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "อยู่ในพอร์ตเทรดของผู้พูด รอลงมาแนวรับแล้วช้อน"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "พื้นฐานดีร่วงมา นอนหลับสบาย"
       }
     ],
     "MA": [
@@ -1114,6 +1284,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "สวยมาก อยู่ในพอร์ตเทรด รอลงแนวรับช้อนกัน หุ้นแข็งแกร่ง"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 450,
+        "note": "พื้นฐานดีร่วงมา แนวรับ $472, $467, $450 นอนหลับสบาย"
       }
     ],
     "DPZ": [
@@ -1272,6 +1450,14 @@
         "note": "อยู่ในพอร์ตระยะยาว 10 ปี แนะนำให้ถือต่อ"
       },
       {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 397,
+        "note": "ซื้อที่ 397 ขาย 48 ได้ 12% ค่อยๆกระเตื้อง แนวต้าน 467, 500"
+      },
+      {
         "date": "2026-05-31",
         "videoId": "42t_4DDxDSQ",
         "videoTitle": "เปิดพอร์ตหุ้น | 💻\"เว็บช่อง\" | หุ้นรอขาย | หุ้นใหญ่กำไร/ขาดทุนเยอะสุด | หุ้นกำลังฟื้น",
@@ -1328,6 +1514,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "Next Era Energy จะควบรวม Dominion (D) เป็นเบอร์1โลก ปันผลแกร่ง รอแนวรับ 78-85"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 82,
+        "note": "ลงมาแนวรับแล้ว เข้า 82-80 ขาย 90 ขึ้นไป หุ้นมั่นคง จ่ายปันผล พลังงานสะอาด"
       }
     ],
     "D": [
@@ -1382,6 +1576,14 @@
         "action": "ถือ",
         "price": null,
         "note": "มีข่าว Nvidia เรื่องโรงงาน"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "มีในพอร์ตที่ค่าเฉลี่ย 200 ดอลลาร์ (ต้นทุนที่ถืออยู่)"
       }
     ],
     "INTC": [
@@ -1424,6 +1626,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "พิกเกิดขึ้นมา 400% แต่คำนวณแล้วยังได้อยู่"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "สร้างโรงงานผลิตชิปรวดเร็วกว่าคาด, ผลิตชิป 18A และ Intel 3 เร็วสุดในรอบ 5 ปี"
       }
     ],
     "HD": [
@@ -1468,6 +1678,14 @@
         "action": "ซื้อ",
         "price": 100,
         "note": "ซอฟต์แวร์ AI แพลตฟอร์ม เปิดตัว Service Now Otto มีศักยภาพฟื้นตัว"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 100,
+        "note": "แนวรับ 100-110 เป้า 124-136 สโนช่วยดัน มีพันธมิตรใหม่ Agentic AI"
       }
     ],
     "IONQ": [
@@ -1626,6 +1844,14 @@
         "action": "ถือ",
         "price": 172,
         "note": "ทุบสถิติ แต่นักทุนกังวลการเติบโตชะลอ Agent Force โต 200% แนวรับ 172/163 ขาย 200"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "กำลังจะประกาศไตรมาส รอดูผล"
       }
     ],
     "FICO": [
@@ -1664,6 +1890,14 @@
         "action": "ซื้อ",
         "price": 100,
         "note": "ถึงแนวรับแล้ว ได้เวลาเข้าไม้แรก มีแนวรับ 86-70 เป้า 114"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ถือ",
+        "price": null,
+        "note": "กล่าวถึงอนาคต Cyber Security (ในหัวข้อ)"
       }
     ],
     "SOFI": [
@@ -1714,6 +1948,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ยังไม่ถึงที พื้นฐานยังแข็งแกร่ง แนะนำเก็บที่ 15-17"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 18.5,
+        "note": "มาแล้ว! ขึ้น 11% วันนี้ insider buy ที่ 16-17 กำไรแล้ว"
       }
     ],
     "LRCX": [
@@ -1750,6 +1992,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ยังได้อยู่ในแผนภูมิเทียบมูลค่า แพงกว่า NVDA"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "เปิดตัวชิป Instinct MI 450 สำหรับ Data Center, หน่วยความจำ 432GB"
       }
     ],
     "ELF": [
@@ -1882,6 +2132,14 @@
         "action": "ถือ",
         "price": null,
         "note": "Rule of 40 อันดับ 1 ในตลาด ทำกำไรดีมาก พื้นฐานแข็งแกร่ง"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 260,
+        "note": "ราคาเป้า 320-350 ตอนนี้ 281 มีรอ 260 ยุคซบเทาจบแล้ว AI ดัน"
       }
     ],
     "FTNT": [
@@ -1930,6 +2188,14 @@
         "action": "ซื้อ",
         "price": 350,
         "note": "โรงพยาบาลอันดับ1 ของอเมริกา ลงมาตามแนวรับซื้อได้ ธุรกิจอยู่คู่สหรัฐไปตลอด"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 334,
+        "note": "โรงพยาบาลอันดับ 1 อเมริกา แนวรับ $358, $334 เก็บยาวได้"
       }
     ],
     "URI": [
@@ -2088,6 +2354,14 @@
         "action": "ถือ",
         "price": null,
         "note": "น่าเก็บยาวๆ เป็นหุ้นที่น่าสนใจในกระแสปัจจุบัน"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ถือ",
+        "price": null,
+        "note": "เปิดศูนย์ทดสอบระบบในไต้หวัน, รองรับ AI supply chain"
       }
     ],
     "TEM": [
@@ -2124,6 +2398,14 @@
         "action": "ซื้อ",
         "price": 85,
         "note": "แนวรับ 82, 75, 85, 93, 100 ไม้นี้ต้องเอาแล้ว 85-86 ถึงแล้ว"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 81,
+        "note": "ถึงแนวรับแล้ว เข้า $81 ขาย $90-93 พื้นฐานยังโอเค รอไตรมาสหน้า"
       }
     ],
     "PROC": [
@@ -2218,6 +2500,14 @@
         "action": "ซื้อ",
         "price": 116,
         "note": "ลงมาแล้ว 118→116 ใกล้ EMA เก็บได้แล้ว มีแนวรับ 111, 104"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อเพิ่ม",
+        "price": 250,
+        "note": "ไตรมาสแข็งแรงเกินคาด AI ดี ทยอยขายที่ 250-260"
       }
     ],
     "SNPS": [
@@ -2264,6 +2554,14 @@
         "action": "ถือ",
         "price": null,
         "note": "แตะ EMA แล้วลงมา แนวรับ 262, 229 ขายที่ 320-335 ทรัมป์สนับสนุน"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "AI Server ยอดสั่งซื้อ 1.2 หมื่นล้าน backlog 1.4 หมื่นล้าน ไตรมาสดีเกินคาด"
       }
     ],
     "MDB": [
@@ -2310,6 +2608,14 @@
         "action": "ถือ",
         "price": null,
         "note": "อยู่ในพอร์ตระยะยาว 10 ปี แนะนำให้ถือต่อ"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 41,
+        "note": "เปิดตัวยาเม็ดลดน้ำหนักที่ UAE, รอขยายตลาดยุโรปครึ่งปีหลัง, แนวรับ $41"
       }
     ],
     "MCD": [
@@ -2428,6 +2734,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "Space X ช่วยดัน CEO มั่นใจปี 2027 จะเป็นปีของ ASTS ระวังปลายปีถ้าส่งดาวเทียมไม่ครบ"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": 11.6,
+        "note": "ลงมาแนวรับ 11.6 น่าสนใจทั้งสั้นและยาว แนวรับ 10, 8.7"
       }
     ],
     "RACE": [
@@ -2484,6 +2798,14 @@
         "action": "ถือ",
         "price": 406,
         "note": "ลูกรักพอร์ต จับมือ Startup AI กับเกาหลี, Samsung WiFi 8 แนวรับ 406/371 ขาย 430/442"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ถือ",
+        "price": 500,
+        "note": "รอไตรมาส มั่นใจถึง $500 แนวรับ $397, $400 ถ้าพุ่งอาจเก็บกำไร"
       }
     ],
     "HIVE": [
@@ -2514,6 +2836,14 @@
         "action": "ถือ",
         "price": null,
         "note": "All Time High แนวต้าน 33-36-40 แนวรับ 26-23-19-17 ชิป GaN"
+      },
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 30,
+        "note": "ร่วมมือ Nvidia MGX, ระบบจ่ายไฟ 800V สำหรับ Data Center, แนวรับ $30"
       }
     ],
     "SNDK": [
@@ -2524,6 +2854,14 @@
         "action": "ถือ",
         "price": null,
         "note": "คล้าย MU มองว่าดีมาก แนวรับ 1300-1100-900 ขาย 1800-2000"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ได้รับอัปเกรดเป้า 3250 DRAM ความต้องการสูง แนวรับ 1300, 1100, 800"
       }
     ],
     "IRENEN": [
@@ -2650,6 +2988,14 @@
         "action": "ซื้อ",
         "price": 28,
         "note": "เก่งเรื่องโดรนไร้คนขับ ระบบต่อต้านโดรน ใช้ในสนามรบจริง"
+      },
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "ได้แรงหนุนจาก SNOW ที่ดันกลุ่มซอฟต์แวร์ทั้งหมด"
       }
     ],
     "RCAT": [
@@ -2694,6 +3040,14 @@
     ],
     "MRVL": [
       {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": null,
+        "note": "ออกผลดี เติบโตได้ดี รายได้+28% แต่ผิดหวังเล็กน้อย ยังมองดีอยู่ แนวรับไม่พัง"
+      },
+      {
         "date": "2026-06-01",
         "videoId": "NUjtl3ZBzZ8",
         "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
@@ -2704,12 +3058,50 @@
     ],
     "CRDO": [
       {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อเพิ่ม",
+        "price": null,
+        "note": "เสียดายไม่ได้เข้าตอน 90 เหรียญ ยินดีกับคนถือ ทีมกูรูให้ด้วย ลุ้นเดล 2"
+      },
+      {
         "date": "2026-06-01",
         "videoId": "NUjtl3ZBzZ8",
         "videoTitle": "ส่องพอร์ตลูกพี่ NVIDIA เก็บหุ้นอะไรบ้าง? | ไม้นี้โหดจริง $20 ล้านเหรียญ!💰",
         "action": "ซื้อ",
         "price": 200,
         "note": "Revenue up 157%, long-term growth play 2028"
+      }
+    ],
+    "MSTR": [
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ถือ",
+        "price": 560,
+        "note": "ยังไซด์เวย์ อยากเห็นราคา 560 ไม่ใช่ 487 พื้นฐานแข็ง มีข่าวดีกฎหมายคริปโต"
+      }
+    ],
+    "VRTS": [
+      {
+        "date": "2026-05-29",
+        "videoId": "SlDndUJF0HM",
+        "videoTitle": "DELL ของแรง!! 💰 | SOFI ที่รอคอย 🎯 | \"จารย์\" เข้าหุ้นใหม่ล่าสุด‼️| COST, MRVL, RBRK, PLTR, NOW, ASTS",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "เก็บไปเลยถึงปลายปี มีลุ้นกับ Nvidia ปลายปี"
+      }
+    ],
+    "PL": [
+      {
+        "date": "2026-06-03",
+        "videoId": "MBTj6g3_nvU",
+        "videoTitle": "ทำไมตลาดหุ้นร่วง? Bitcoin น่าห่วง!? | อนาคต Cyber Security \"PANW, CRWD, RBRK\" | NVTS, MU, INTC, AMD",
+        "action": "ซื้อ",
+        "price": 40,
+        "note": "หุ้นดี รอแนวรับ $40 ขาย $45-55 มองยาวได้ ธุรกิจดี"
       }
     ]
   },
@@ -2734,7 +3126,7 @@
     "PLTR": "Software/Cloud",
     "NVIS": "Defense/Drone",
     "CELH": "Consumer",
-    "RBRK": "Other",
+    "RBRK": "Defense/Drone",
     "NVDA": "AI/Chip",
     "RKLB": "Defense/Drone",
     "SMCI": "Other",
@@ -2818,7 +3210,7 @@
     "NOK": "Other",
     "BB": "Software/Cloud",
     "ORCL": "Software/Cloud",
-    "ASTS": "Defense/Drone",
+    "ASTS": "Other",
     "RACE": "Consumer",
     "HOOD": "Fintech",
     "PFE": "Healthcare",
@@ -2843,6 +3235,9 @@
     "NLST": "AI/Chip",
     "CRWV": "AI/Chip",
     "MRVL": "AI/Chip",
-    "CRDO": "AI/Chip"
+    "CRDO": "AI/Chip",
+    "MSTR": "Fintech",
+    "VRTS": "Software/Cloud",
+    "PL": "Defense/Drone"
   }
 }
