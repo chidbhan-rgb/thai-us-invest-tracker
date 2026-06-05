@@ -1,0 +1,28 @@
+#
+# Keepalive: Make a weekly commit to keep scheduled workflows active
+# GitHub disables scheduled workflows if the repo is inactive for 60 days
+#
+name: Weekly Keepalive
+
+on:
+  schedule:
+    # Every Monday at 00:00 UTC
+    - cron: "0 0 * * 1"
+  workflow_dispatch:  # allow manual trigger
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make keepalive commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: weekly keepalive to maintain scheduled workflows"
+          git push
