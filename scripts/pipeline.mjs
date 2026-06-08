@@ -135,7 +135,7 @@ async function callClaude(chunk, videoTitle, chunkIndex, totalChunks) {
   const label = totalChunks > 1 ? ` (chunk ${chunkIndex + 1}/${totalChunks})` : "";
   try {
     const response = await client.messages.create({
-      model: "claude-sonnet-4-5",
+      model: "claude-sonnet-4-7",
       max_tokens: 1024,
       system: [
         {
