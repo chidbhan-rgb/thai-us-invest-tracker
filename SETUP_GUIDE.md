@@ -1,106 +1,36 @@
-# Thai-US Stock Tracker - Setup & Continuation Guide
+# Thai-US Stock Tracker - Setup Guide
 
 ## 📊 Project Status
 - **Live Dashboard:** https://thai-us-invest-tracker.vercel.app/
 - **GitHub:** https://github.com/chidbhan-rgb/thai-us-invest-tracker
-- **Current Stats:** 20 videos · 133 tickers
-- **Last Updated:** 2026-06-05
 
-## 🚀 How It Works
+## 🚀 How It Works (Manual Workflow)
 
-### Automated Daily Workflow
-1. **Daily Pipeline** (4:00 AM Bangkok time = 21:00 UTC)
-   - Fetches latest videos from YouTube channel RSS
-   - Extracts transcripts (Thai or auto-generated)
-   - Uses Claude API to extract stock mentions
-   - Commits to GitHub → Vercel auto-deploys
+ข้อมูลทั้งหมดถูกเพิ่มด้วยมือ (manual) โดยไม่มี automated pipeline
 
-2. **Weekly Keepalive** (Monday 00:00 UTC)
-   - Makes empty commit to keep scheduled workflows active
-   - Prevents GitHub from disabling workflows
+### ขั้นตอนการเพิ่มวิดีโอใหม่
 
-### Manual Transcript Fallback System
-When YouTube videos have **disabled transcripts**:
-1. You provide the transcript/summary
-2. Save to: `data/transcripts/{videoID}.txt`
-3. Pipeline automatically uses it next run
-4. Claude extracts stocks from your summary
+1. ดูคลิปและสรุปหุ้นพร้อม Action/ราคาแนวรับ-แนวต้าน
+2. แจ้ง Claude Code พร้อมส่ง URL คลิป + สรุปเนื้อหา
+3. Claude เพิ่มข้อมูลเข้า `data/stocks.json` และสร้างไฟล์ transcript
+4. Commit + Push → Vercel auto-deploy
+
+### ข้อมูลที่ต้องส่งให้ Claude
+- URL วิดีโอ (`https://www.youtube.com/watch?v=XXXXXXXX`)
+- สรุปหุ้นแต่ละตัว: ticker / action (ซื้อ/ขาย/ถือ/ซื้อเพิ่ม/หลีกเลี่ยง) / ราคา / note
+
+---
 
 ## 🔧 Local Development
 
-### Setup
 ```bash
-cd C:\xampp\htdocs\thai-us-invest-tracker
-
-# Install dependencies
+cd C:\Users\User\Desktop\thai-us-invest-tracker
 npm install
-
-# Start dev server (runs on port 3000 or next available)
 npm run dev
+# เปิด http://localhost:3000
 ```
 
-### Run Pipeline Manually
-```bash
-ANTHROPIC_API_KEY="your-key-from-github-secrets" node scripts/pipeline.mjs
-```
-
-## 📝 Common Tasks
-
-### 1. Add Manual Transcript for Disabled-Transcript Video
-When pipeline shows: `⚠️ Transcript is disabled on this video`
-
-**Steps:**
-1. Get transcript text from YouTube or video summary
-2. Save to: `data/transcripts/{VIDEO_ID}.txt`
-3. Commit and push
-4. Run pipeline manually (or wait for next 4am run)
-
-**Example:**
-```
-Video: https://www.youtube.com/watch?v=-XO-0FlwDAo
-VideoID: -XO-0FlwDAo
-File: data/transcripts/-XO-0FlwDAo.txt
-```
-
-### 2. View Dashboard
-- **Local:** `http://localhost:3000` (or 3003, 3004, etc if port busy)
-- **Live:** https://thai-us-invest-tracker.vercel.app/
-
-### 3. Check Workflow Status
-```bash
-gh run list -R chidbhan-rgb/thai-us-invest-tracker --workflow=daily-pipeline.yml --limit=10
-```
-
-### 4. Trigger Workflow Manually
-```bash
-gh workflow run daily-pipeline.yml -R chidbhan-rgb/thai-us-invest-tracker
-```
-
-## 🐛 Troubleshooting
-
-### Dashboard Shows Old Data
-1. Hard refresh: `Ctrl + Shift + R`
-2. Or restart dev server:
-   ```bash
-   # Kill all node processes
-   taskkill /F /IM node.exe
-   # Restart
-   npm run dev
-   ```
-
-### Workflow Never Runs (Scheduled)
-- GitHub disables workflows if repo inactive 60+ days
-- Keepalive workflow prevents this (runs every Monday)
-- If still broken, manually trigger via GitHub Actions UI
-
-### Workflow Runs but No New Videos
-- Check YouTube channel for new videos
-- Videos with disabled transcripts are skipped (need manual transcript)
-- Search for `⚠️ Transcript is disabled` in workflow logs
-
-### API Key Issues
-- Key stored in: GitHub Secrets (ANTHROPIC_API_KEY)
-- Reach out to repo maintainer for current key
+---
 
 ## 📂 Key Files
 
@@ -108,67 +38,54 @@ gh workflow run daily-pipeline.yml -R chidbhan-rgb/thai-us-invest-tracker
 data/
   stocks.json           # Main database (videos, mentions, sectors)
   transcripts/
-    {videoID}.txt      # Manual transcripts for disabled-transcript videos
-
-scripts/
-  pipeline.mjs         # Main extraction pipeline
+    {videoID}.txt       # สรุป transcript ของแต่ละคลิป
 
 src/
-  app/
-    page.tsx           # Dashboard page (uses readFileSync for fresh data)
-    error.tsx          # Error boundary
+  app/page.tsx          # Dashboard page
   components/
-    Dashboard.tsx      # Main UI component
-  lib/
-    types.ts           # TypeScript types
+    Dashboard.tsx       # Main UI component
+    TickerSelector.tsx  # Ticker list grouped by sector
+    MentionList.tsx     # Mention history per ticker
+    VideoList.tsx       # By Video tab
+  lib/types.ts          # TypeScript types + ACTION_META
 
-.github/workflows/
-  daily-pipeline.yml   # Daily 4am Bangkok time execution
-  keepalive.yml        # Weekly Monday keepalive
 ```
 
-## 💡 Next Steps for New Chat
-
-When starting a new chat session:
-1. **Reference this file:** "See SETUP_GUIDE.md for context"
-2. **Ask about new videos:** "Any new videos from the channel?"
-3. **Check workflow status:** "Did the workflow run today?"
-4. **Provide transcripts:** If disabled-transcript videos exist
+---
 
 ## 📊 Data Schema
 
-### stocks.json Structure
+### stocks.json
 ```json
 {
-  "lastUpdated": "2026-06-05",
-  "processedVideos": ["Cz1g9ANsZIk", "..."],
+  "lastUpdated": "YYYY-MM-DD",
+  "processedVideos": ["videoId1", "..."],
   "mentions": {
     "NVDA": [
       {
-        "date": "2026-06-01",
+        "date": "YYYY-MM-DD",
         "videoId": "XeAYFVds2S4",
         "videoTitle": "...",
         "action": "ซื้อ",
         "price": 227,
-        "note": "AI demand..."
+        "note": "สรุปสั้นๆ ไม่เกิน 80 ตัวอักษร"
       }
     ]
   },
   "sectors": {
-    "NVDA": "AI/Chip",
-    "GOOGL": "Software/Cloud"
+    "NVDA": "AI/Chip"
   }
 }
 ```
 
-## 🎯 Success Checklist
+### Actions
+| Action | Label | ความหมาย |
+|---|---|---|
+| ซื้อ | BUY | แนะนำซื้อ |
+| ซื้อเพิ่ม | ADD | เพิ่มไม้ |
+| ถือ | HOLD | ถือต่อ |
+| ขาย | SELL | ขายทำกำไร |
+| หลีกเลี่ยง | AVOID | ไม่แนะนำ |
 
-✅ Workflow runs daily at 4am Bangkok time  
-✅ Manual transcripts work for disabled videos  
-✅ Dashboard updates automatically via Vercel  
-✅ GitHub syncs with Claude API extraction  
-✅ Weekly keepalive prevents workflow disabling  
-
----
-
-**Questions?** Check the workflow logs or run pipeline manually to diagnose.
+### Sectors
+`AI/Chip` · `Defense/Drone` · `Software/Cloud` · `Fintech` · `Healthcare` · `Energy` · `Consumer` · `Other`
