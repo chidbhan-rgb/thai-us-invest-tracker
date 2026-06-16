@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12",
+  "lastUpdated": "2026-06-15",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -25,7 +25,8 @@
     "3TZInYmSsVc",
     "THQeVCYpPBI",
     "kKax_AgIm2o",
-    "LXrsPxy7wNI"
+    "LXrsPxy7wNI",
+    "namBMdS1of8"
   ],
   "mentions": {
     "EOSE": [
@@ -422,6 +423,14 @@
         "action": "ซื้อ",
         "price": 550,
         "note": "Forward PE 18 เท่าถูกมาก โฆษณาแข็ง ทยอยลดค่าเฉลี่ย"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ราคาต่ำเกินพื้นฐาน Forward PE ถูก สะสมตาม EMA"
       }
     ],
     "CEG": [
@@ -1134,6 +1143,14 @@
         "action": "ซื้อ",
         "price": 186,
         "note": "SpaceX ต้องซื้อชิป GB300 สำหรับ AI Data Center อวกาศ"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ถือ",
+        "price": null,
+        "note": "อันดับ 1 โลก แซง GOOGL/AAPL XAI+SpaceX สั่งชิป เป้า ATH $250"
       }
     ],
     "RKLB": [
@@ -1484,6 +1501,14 @@
         "action": "ถือ",
         "price": null,
         "note": "ชิปขาดแคลน โรงงานในสหรัฐ ระยะสั้นเสี่ยง CPI แนวรับ 820/800/600"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ขาย",
+        "price": 800,
+        "note": "CEO ส่งสัญญาณไตรมาสอลังการ ถือมาแต่ต้น $800 พิจารณาขายบางส่วน เป้าถือยาว $1000"
       }
     ],
     "SPCX": [
@@ -1586,6 +1611,14 @@
         "action": "ซื้อ",
         "price": 450,
         "note": "พื้นฐานดีร่วงมา แนวรับ $472, $467, $450 นอนหลับสบาย"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Mastercard ราคาต่ำเกินพื้นฐาน สะสมตาม EMA"
       }
     ],
     "DPZ": [
@@ -1806,6 +1839,14 @@
         "action": "ซื้อ",
         "price": 382,
         "note": "หลุดโครงสร้าง เงินโยกออก แนวรับ 382/365"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ราคาต่ำเกินพื้นฐาน สะสมตาม EMA"
       }
     ],
     "SPGI": [
@@ -2084,6 +2125,14 @@
         "action": "ซื้อ",
         "price": 94,
         "note": "ซอฟต์แวร์โดนเท ราคาถึงแนวรับ เป้า 110 ผลตอบแทน 16%"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ถือ",
+        "price": null,
+        "note": "ถือยาว เป้าระยะสั้น $110"
       }
     ],
     "IONQ": [
@@ -2420,6 +2469,14 @@
         "action": "ซื้อเพิ่ม",
         "price": null,
         "note": "ส่งคืนกำไรเก็บกำไรกันไปบ้าง"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "Lam Research ต้นน้ำผลิตเครื่องจักรชิป ออมยาว พื้นฐานสำคัญ"
       }
     ],
     "AMD": [
@@ -2454,6 +2511,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "เปิดตัวชิป Instinct MI 450 สำหรับ Data Center, หน่วยความจำ 432GB"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ถือ",
+        "price": null,
+        "note": "Edge AI ไม่พึ่ง Data Center โต MSFT/META ลดพึ่ง NVDA อนาคตดีขึ้น"
       }
     ],
     "ELF": [
@@ -2884,6 +2949,14 @@
         "action": "ซื้อ",
         "price": 81,
         "note": "ถึงแนวรับแล้ว เข้า $81 ขาย $90-93 พื้นฐานยังโอเค รอไตรมาสหน้า"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ราคาต่ำเกินพื้นฐาน สะสมตาม EMA"
       }
     ],
     "PROC": [
@@ -3278,6 +3351,14 @@
         "action": "ขาย",
         "price": 330,
         "note": "เปิดตัว EV ดีไซน์เหมือน Nissan ตลาดผิดหวัง แนวรับ $330/$313/$285"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": 357,
+        "note": "ร่วงหนักจาก EV ดีไซน์ไม่ถูกใจ Morgan Stanley ปรับเป้าขึ้น แนวรับ 357 เป้า 400"
       }
     ],
     "HOOD": [
@@ -3518,6 +3599,14 @@
         "action": "ซื้อ",
         "price": 47,
         "note": "ลงมาโซนสะสม แนวรับ 47-48 อิ่มแล้วรอลึก 42"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ถือ",
+        "price": null,
+        "note": "ดีดกลับ 9% ที่ $29 ลุ้นทะลุ $30 ผ่านแล้วมีโมเมนตัมต่อ"
       }
     ],
     "CAT": [
@@ -3716,6 +3805,14 @@
         "action": "ซื้อ",
         "price": 25,
         "note": "ดาวเทียมสำรวจโลก สัญญารัฐ แนวรับ 27/25 All-in 20 เป้า 32/35/40"
+      },
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": 30,
+        "note": "ดาวเทียม รายได้โต 40% backlog พุ่ง แนวรับ 29-30 รอลึก 27"
       }
     ],
     "BE": [
@@ -3774,6 +3871,26 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ETF กลุ่มชิป AVGO/TSM จบในตัวเดียว ไม่ต้องเลือกหุ้นรายตัว"
+      }
+    ],
+    "AMAT": [
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ต้นน้ำผลิตเครื่องจักรชิป ออมยาว โรงงานทั่วโลกต้องใช้"
+      }
+    ],
+    "KLAC": [
+      {
+        "date": "2026-06-15",
+        "videoId": "namBMdS1of8",
+        "videoTitle": "ลงทุนหุ้นอเมริกา ประจำวันที่ 15 มิถุนายน 2026 | NVDA #1 โลก / MU / SpaceX / PL",
+        "action": "ซื้อ",
+        "price": null,
+        "note": "ต้นน้ำผลิตเครื่องจักรชิป ออมยาว โรงงานทั่วโลกต้องใช้"
       }
     ]
   },
@@ -3915,6 +4032,8 @@
     "CYBR": "Software/Cloud",
     "HIMX": "AI/Chip",
     "CLSK": "Energy",
-    "SMH": "AI/Chip"
+    "SMH": "AI/Chip",
+    "AMAT": "AI/Chip",
+    "KLAC": "AI/Chip"
   }
 }
