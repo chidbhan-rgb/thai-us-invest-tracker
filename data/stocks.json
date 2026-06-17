@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15",
+  "lastUpdated": "2026-06-16",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -26,7 +26,8 @@
     "THQeVCYpPBI",
     "kKax_AgIm2o",
     "LXrsPxy7wNI",
-    "namBMdS1of8"
+    "namBMdS1of8",
+    "JtRYOuWepV8"
   ],
   "mentions": {
     "EOSE": [
@@ -69,6 +70,14 @@
         "action": "ซื้อ",
         "price": 6.75,
         "note": "แบตเตอรี่ รับความเสี่ยงสูง แนวรับ 6.75 เป้า 8-9 ระวังดอกเบี้ย"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ขาย",
+        "price": null,
+        "note": "แบตเตอรี่อัตโนมัติสำเร็จ ราคาชนแนวต้าน ล็อกกำไร รอรับ 7.4/6.8"
       }
     ],
     "KTOS": [
@@ -333,6 +342,14 @@
         "action": "ถือ",
         "price": 1583,
         "note": "ถือระยะยาว 1-2 ปี ทุ่มลงทุนโลจิสติกส์ เป้า 2000 แนวรับ 1583/1500"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 1600,
+        "note": "วงในซื้อ ปีลงทุนหนัก พื้นฐานแน่น รอผลในปีหน้า เป้า 1700/1900"
       }
     ],
     "META": [
@@ -597,6 +614,14 @@
         "action": "ซื้อ",
         "price": 900,
         "note": "พื้นฐานดีร่วงมารับ แนวรับ $939, $900, $880"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 900,
+        "note": "พื้นฐานแกร่ง ช้อนที่ 900 รอขาย 1000 กำไร 13%"
       }
     ],
     "VST": [
@@ -1273,6 +1298,14 @@
         "action": "ซื้อ",
         "price": 92,
         "note": "เข้า Nasdaq 100 ลุ้นจรวด Neutron ปลายปี"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 100,
+        "note": "รอกองทุนเข้าซื้อช่วงเข้าดัชนี NASDAQ 100 วัน 22 มิ.ย. เป้า 115"
       }
     ],
     "SMCI": [
@@ -1527,6 +1560,14 @@
         "action": "ซื้อ",
         "price": 135,
         "note": "SpaceX IPO ประวัติศาสตร์ รอย่อ ระยะยาว AI อวกาศเติบโตไกล"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ขาย",
+        "price": 200,
+        "note": "มูลค่า #4 โลก เตรียมเข้า NASDAQ 100 ราคารับ FOMO เยอะ ล็อกกำไร"
       }
     ],
     "V": [
@@ -2815,6 +2856,14 @@
         "action": "ซื้อ",
         "price": 13,
         "note": "กลุ่มอวกาศ แนวรับ 15(ร่วงแล้ว)/13/9.4 เป้า 15/18/20"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 12,
+        "note": "Redwire Space สัญญา NASA แน่น งานเต็ม เป้าสั้น 14"
       }
     ],
     "CBRS": [
@@ -3461,6 +3510,14 @@
         "action": "ซื้อ",
         "price": 348,
         "note": "งบดีแต่ premium สูง แนวรับ 360/350/348 EMA เป้า 485/500"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 360,
+        "note": "วงในซื้อ ชิปเฉพาะทาง Data Center โดนเทเพราะแพง รอ EMA หนา"
       }
     ],
     "HIVE": [
@@ -3573,6 +3630,14 @@
         "action": "ถือ",
         "price": null,
         "note": "ติดลบ 3 ปี กลับมาบวกได้ แนวรับ 66/62 แนวต้าน 74 รอ Data Center 2027"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 50,
+        "note": "วงในซื้อ ไมโครอินเวอร์เตอร์โซล่าร์ รุก Data Center แนวรับ 50-43"
       }
     ],
     "HIMS": [
@@ -3607,6 +3672,14 @@
         "action": "ถือ",
         "price": null,
         "note": "ดีดกลับ 9% ที่ $29 ลุ้นทะลุ $30 ผ่านแล้วมีโมเมนตัมต่อ"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ขาย",
+        "price": 31,
+        "note": "แตะแนวต้านนรก 30-31 Short ดักรอ ล็อกกำไร ถ้าผ่าน 32 เป้า 36"
       }
     ],
     "CAT": [
@@ -3715,6 +3788,14 @@
         "action": "ซื้อ",
         "price": 114,
         "note": "NVIDIA-backed, Vera Rubin chips"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ขาย",
+        "price": null,
+        "note": "Cloud AI เข้า NASDAQ 100 ราคาพุ่ง เก็บกำไร รอรับใหม่ 105/94"
       }
     ],
     "MRVL": [
@@ -3813,6 +3894,14 @@
         "action": "ซื้อ",
         "price": 30,
         "note": "ดาวเทียม รายได้โต 40% backlog พุ่ง แนวรับ 29-30 รอลึก 27"
+      },
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ซื้อ",
+        "price": 25,
+        "note": "โดนแย่งเงิน SpaceX หลุดแนวรับ รอช้อน EMA หนา DCA ไม่เกิน 4%"
       }
     ],
     "BE": [
@@ -3892,6 +3981,16 @@
         "price": null,
         "note": "ต้นน้ำผลิตเครื่องจักรชิป ออมยาว โรงงานทั่วโลกต้องใช้"
       }
+    ],
+    "QCOM": [
+      {
+        "date": "2026-06-16",
+        "videoId": "JtRYOuWepV8",
+        "videoTitle": "SpaceX ขึ้น #4 โลก! วงในซื้อ ENPH/MELI/AVGO + กลยุทธ์ HIMS, CRWV, QCOM | 16 มิ.ย.",
+        "action": "ขาย",
+        "price": null,
+        "note": "ประกาศลุย AI 40 รุ่น ชนแนวต้าน เก็บกำไร รอรับใหม่ 210/195"
+      }
     ]
   },
   "sectors": {
@@ -3899,7 +3998,7 @@
     "KTOS": "Defense/Drone",
     "AVAV": "Defense/Drone",
     "ONDS": "Defense/Drone",
-    "MELI": "Fintech",
+    "MELI": "Consumer",
     "META": "Software/Cloud",
     "CEG": "Energy",
     "TMDX": "Healthcare",
@@ -4022,7 +4121,7 @@
     "RCAT": "Defense/Drone",
     "RXT": "Software/Cloud",
     "NLST": "AI/Chip",
-    "CRWV": "AI/Chip",
+    "CRWV": "Software/Cloud",
     "MRVL": "AI/Chip",
     "CRDO": "AI/Chip",
     "MSTR": "Fintech",
@@ -4034,6 +4133,7 @@
     "CLSK": "Energy",
     "SMH": "AI/Chip",
     "AMAT": "AI/Chip",
-    "KLAC": "AI/Chip"
+    "KLAC": "AI/Chip",
+    "QCOM": "AI/Chip"
   }
 }
