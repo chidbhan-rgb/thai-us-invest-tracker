@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16",
+  "lastUpdated": "2026-06-17",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -27,7 +27,8 @@
     "kKax_AgIm2o",
     "LXrsPxy7wNI",
     "namBMdS1of8",
-    "JtRYOuWepV8"
+    "JtRYOuWepV8",
+    "nKqTE3F124w"
   ],
   "mentions": {
     "EOSE": [
@@ -1384,6 +1385,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ร่วมลงทุน SpaceX AI 2,000 ล้าน SpaceX เป็นลูกค้า"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ถือ",
+        "price": null,
+        "note": "ปลาย มิ.ย. ปล่อย FSD ใหม่ ต้น ก.ค. ยอดส่งมอบ Q2 จับตาใกล้ชิด"
       }
     ],
     "AAPL": [
@@ -1436,6 +1445,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "หุ้นที่ไม่มั่นใจมาก แนะนำลงไม้ละ 10 เหรียญ คิดว่าจะขึ้นได้"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ขาย",
+        "price": null,
+        "note": "FDA Fast Track ยา Huntington ร่วม QURE พุ่ง 34% ขายบางส่วนหรือถือลุ้น Q3"
       }
     ],
     "MU": [
@@ -1542,6 +1559,14 @@
         "action": "ขาย",
         "price": 800,
         "note": "CEO ส่งสัญญาณไตรมาสอลังการ ถือมาแต่ต้น $800 พิจารณาขายบางส่วน เป้าถือยาว $1000"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ถือ",
+        "price": 1000,
+        "note": "Deutsche Bank เป้า 1,500 ตื้อก่อนงบ แนวรับ 1000/900/818 ระวังก่อนงบออก"
       }
     ],
     "SPCX": [
@@ -1812,6 +1837,14 @@
         "action": "ซื้อเพิ่ม",
         "price": 350,
         "note": "ถือหุ้น SpaceX 6% มูลค่าเติบโตส่งผลดีงบดุล"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 360,
+        "note": "ทรงตัว EMA AI/ชิป/YouTube ครบ แนวรับ 360/350/335 เป้า 385-400"
       }
     ],
     "DAL": [
@@ -1888,6 +1921,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ราคาต่ำเกินพื้นฐาน สะสมตาม EMA"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 366,
+        "note": "ยกเลิกดีล Oracle Data Center แนวรับ 366/356/345 เป้า 400+"
       }
     ],
     "SPGI": [
@@ -2090,6 +2131,14 @@
         "action": "ซื้อ",
         "price": 104,
         "note": "BofA อัปเกรด แนวรับ 104(เสี่ยง)/85/65/54 รอดูงบโรงหล่อ"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 104,
+        "note": "ชิป 18A โรงหล่อใหม่ ติดแนวต้าน 132 แนวรับ 104/85/65"
       }
     ],
     "HD": [
@@ -2322,6 +2371,14 @@
         "action": "ถือ",
         "price": 200,
         "note": "งบดีแต่ AI รายได้ยังเล็ก CFO ลาออก รอ Firefly เด่นชัด"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ถือ",
+        "price": null,
+        "note": "ต่ำสุด 8 ปี PE 9.5x Super Investor เริ่มเก็บ ถือนิ่งไม่ขายไม่ช้อนเพิ่ม"
       }
     ],
     "CRM": [
@@ -2500,6 +2557,14 @@
         "action": "ถือ",
         "price": 14,
         "note": "พื้นฐานดี ราคาใกล้แนวรับ รอทดสอบ 13-15"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ถือ",
+        "price": null,
+        "note": "CEO ซื้อเพิ่ม 200k หุ้น ราคายืนที่ 15 ถือยาวรอ 20-21"
       }
     ],
     "LRCX": [
@@ -2920,6 +2985,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "CEO บอกกำลังพัฒนาเครื่องใหม่ ความต้องการสูง รอบขายใหม่ รายได้กำไรเพิ่ม"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 1600,
+        "note": "Elon ล็อค EUV quota xAI ราคาสูง รอ dip แนวรับ 1600-1700/1400-1300 เป้า 2000+"
       }
     ],
     "ALAB": [
@@ -2954,6 +3027,14 @@
         "action": "ถือ",
         "price": null,
         "note": "งบดีมาก แต่จารย์เชลดสัดส่วนแล้ว รอปรับฐาน"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ขาย",
+        "price": null,
+        "note": "เข้าดัชนี NASDAQ 100 วันที่ 22 มิ.ย. แต่ M-pattern ATH ขายล็อกกำไรระยะสั้น"
       }
     ],
     "TEM": [
@@ -3232,6 +3313,14 @@
         "action": "ซื้อ",
         "price": 41,
         "note": "Wegovy ถล่มทลาย ราคาลงติดแนวรับ แนวรับ 41/38 เป้า 44 (7%)"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ขาย",
+        "price": 40,
+        "note": "ขอใบอนุญาตจีน ซื้อหุ้นคืน แต่ถึงแนวต้านแล้ว แบ่งเก็บกำไร รอช้อนใหม่ 40/38/35"
       }
     ],
     "MCD": [
@@ -3356,6 +3445,14 @@
         "action": "ซื้อ",
         "price": 171,
         "note": "Cloud โต 93% แต่งบลงทุนพุ่ง แนวรับ 171/147-148/134-137 4 ไม้"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 185,
+        "note": "MSFT ยกเลิกดีล+งบไม่ปัง แนวรับ 185-180/170 เป้า 200-220"
       }
     ],
     "ASTS": [
@@ -3390,6 +3487,14 @@
         "action": "ซื้อ",
         "price": 83,
         "note": "BlueBird ดาวเทียม 17 มิ.ย. แนวรับ 83/73/67 เป้า 92/104/117"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 86,
+        "note": "BlueBird 8-9-10 ขึ้นวงโคจรสำเร็จจับมือ SpaceX แนวรับ 86/82 ลึก 74/67 เป้า 100/105-120"
       }
     ],
     "RACE": [
@@ -3442,6 +3547,14 @@
         "action": "ซื้อ",
         "price": 80,
         "note": "ยอดเงินฝาก+เทรดโต 70% ได้สิทธิ์คุม IPO แนวรับ 80/71/65 เป้า 84/93/100"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ขาย",
+        "price": 100,
+        "note": "แตะ 100 บวก 8% ลดพนักงาน 10% IPO Access ปลายปี ขายทำกำไร เป้าถัดไป 120"
       }
     ],
     "PFE": [
@@ -3538,6 +3651,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ร่วมมือกับ AMD ทำ packaging ให้ Nvidia, Apple, TSMC โรงงานใหม่ที่อริโซนา"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 80,
+        "note": "พันธมิตร TSMC 10 ปี Arizona แพคเกจชิป AI แนวรับ 80/67 เป้า 100/110/120"
       }
     ],
     "NVTS": [
@@ -3680,6 +3801,14 @@
         "action": "ขาย",
         "price": 31,
         "note": "แตะแนวต้านนรก 30-31 Short ดักรอ ล็อกกำไร ถ้าผ่าน 32 เป้า 36"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 26,
+        "note": "แอปสูงสุดประวัติการณ์ FDA ประชุม 23-24 ก.ค. เปปไทด์ 7 ชนิด แนวรับ 26/22/19 เป้า 36/40"
       }
     ],
     "CAT": [
@@ -3796,6 +3925,14 @@
         "action": "ขาย",
         "price": null,
         "note": "Cloud AI เข้า NASDAQ 100 ราคาพุ่ง เก็บกำไร รอรับใหม่ 105/94"
+      },
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 105,
+        "note": "Backlog แสนล้าน ราคา 120 แล้ว รอถัดไป 125/132 แนวรับ 105/94"
       }
     ],
     "MRVL": [
@@ -3991,6 +4128,46 @@
         "price": null,
         "note": "ประกาศลุย AI 40 รุ่น ชนแนวต้าน เก็บกำไร รอรับใหม่ 210/195"
       }
+    ],
+    "QURE": [
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ถือ",
+        "price": null,
+        "note": "ยีนบำบัด AMT-130 Huntington พุ่ง 77% ร่วมกับ CLPT FDA Fast Track"
+      }
+    ],
+    "DE": [
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 558,
+        "note": "เครื่องจักรเกษตร Automation เก็บยาว แนวรับ 558/532/500 เป้า 613-657"
+      }
+    ],
+    "AAOI": [
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 162,
+        "note": "Fiber Optic AI Data Center ขยายสินเชื่อจีน แนวรับ 162/148 เป้าสั้น 190 (16%)"
+      }
+    ],
+    "OSS": [
+      {
+        "date": "2026-06-17",
+        "videoId": "nKqTE3F124w",
+        "videoTitle": "ลงทุนหุ้นอเมริกา 17 มิ.ย. 2026 | CLPT ASTS HOOD ASML ADBE HIMS / คืนนี้เฟดแถลง",
+        "action": "ซื้อ",
+        "price": 17,
+        "note": "งานกระทรวงกลาโหม หุ้นเล็กพื้นฐานแกร่ง แนวรับ 17/14/12 เป้า 19/20/22"
+      }
     ]
   },
   "sectors": {
@@ -4021,7 +4198,7 @@
     "FLYW": "Defense/Drone",
     "TSLA": "Consumer",
     "AAPL": "Consumer",
-    "CLPT": "Other",
+    "CLPT": "Healthcare",
     "MU": "AI/Chip",
     "SPCX": "Defense/Drone",
     "V": "Fintech",
@@ -4134,6 +4311,10 @@
     "SMH": "AI/Chip",
     "AMAT": "AI/Chip",
     "KLAC": "AI/Chip",
-    "QCOM": "AI/Chip"
+    "QCOM": "AI/Chip",
+    "QURE": "Healthcare",
+    "DE": "Consumer",
+    "AAOI": "AI/Chip",
+    "OSS": "Defense/Drone"
   }
 }
