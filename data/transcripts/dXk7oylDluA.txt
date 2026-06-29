@@ -1,0 +1,90 @@
+วันที่ 25 มิถุนายน 2568 - LIVE สด: ข้อมูล PCE + ผล MU Earnings
+
+=== ภาพรวมตลาด ===
+ข้อมูล PCE (Personal Consumption Expenditures) ล่าสุดออกมาใกล้เคียงคาดการณ์
+ตลาดตอบรับในแนวทาง Wait and See
+
+=== MU (Micron Technology) ===
+คำแนะนำ: ขาย (Take Profit ระยะสั้น)
+ผล earnings ออกมาดี แต่ราคาปรับขึ้น 12-18% แล้ว
+แนะนำ Take Profit บางส่วน รอซื้อคืนที่แนวรับ
+เป้าหมายระยะยาวยังคงอยู่ที่ 1,500 เหรียญ
+
+=== PLTR (Palantir Technologies) ===
+คำแนะนำ: ซื้อ
+ราคาแตะแนวรับ (จุดพิจารณาไม้แรก)
+แนวรับลึก: 108 เหรียญ, 90 เหรียญ และ 80 เหรียญ
+แนะนำสะสมเป็น DCA
+
+=== PRCT (Procept BioRobotics) ===
+คำแนะนำ: ซื้อ ราคา 21 เหรียญ
+หุ้นหุ่นยนต์ผ่าตัด ระบบ AQUABEAM สำหรับโรคต่อมลูกหมาก
+แนวรับ: 19, 17, 15 เหรียญ
+
+=== FPS (Frontier Power Solutions) ===
+คำแนะนำ: ซื้อ ราคา 55 เหรียญ
+สวิตช์เกียร์-หม้อแปลงสำหรับ Data Center
+Custom อุปกรณ์ไฟฟ้าแรงสูง
+แนวรับ: 45, 42 เหรียญ
+
+=== NVO (Novo Nordisk) ===
+คำแนะนำ: ซื้อเพิ่ม ราคา 44 เหรียญ
+ยา GLP-1 Ozempic/Wegovy ยังเป็น leader
+เป้าหมาย: 47-50-60 เหรียญ
+
+=== RKLB (Rocket Lab) ===
+คำแนะนำ: ซื้อ ราคา 65 เหรียญ
+จรวด Neutron กำลังพัฒนา
+แนวต้าน: 80, 74 เหรียญ
+
+=== ASTS (AST SpaceMobile) ===
+คำแนะนำ: ซื้อ ราคา 62 เหรียญ
+บริการ Satellite Direct-to-Cell
+แนวรับ: 55, 48 เหรียญ
+
+=== GEV (GE Vernova) ===
+คำแนะนำ: ซื้อ ราคา 985 เหรียญ (แนวรับ)
+พลังงานไฟฟ้า Grid + Data Center demand surge
+ATH: 1,152 เหรียญ
+แนวรับ: 888, 827, 785 เหรียญ
+
+=== ALAB (Astera Labs) ===
+คำแนะนำ: ซื้อ ราคา 355 เหรียญ
+Connectivity solutions สำหรับ AI Data Center
+BofA target: 400 เหรียญต้นๆ
+แนวรับ: 317, 263 เหรียญ
+
+=== NOW (ServiceNow) ===
+คำแนะนำ: ซื้อ
+AI workflow automation enterprise
+แนวรับ: 810, 780 เหรียญ
+
+=== AVGO (Broadcom) ===
+คำแนะนำ: ซื้อ ราคา 370 เหรียญ (ต่อหุ้น)
+Custom AI chip leader
+แนวรับ: 361, 348 เหรียญ
+
+=== AMD (Advanced Micro Devices) ===
+คำแนะนำ: ซื้อ ราคา 450 เหรียญ (เป้าระยะกลาง)
+MI300X ยังแข็งแกร่ง
+แนวรับ: 430, 390 เหรียญ
+
+=== IIPR (Innovative Industrial Properties) ===
+คำแนะนำ: ขาย (ปิด position ทั้งหมด)
+ย้ายเงินไปซื้อ NVO แทน
+
+=== WM (Waste Management) ===
+คำแนะนำ: ถือ (Defensive)
+หุ้น Defensive ยามตลาดผันผวน
+
+=== COST (Costco) ===
+คำแนะนำ: ถือ (Defensive)
+หุ้น Defensive ให้ความมั่นคง
+
+=== SGOV (iShares 0-3 Month Treasury Bond ETF) ===
+คำแนะนำ: ถือ
+จอดเงินส่วนที่ยังไม่ได้ลงทุน
+
+=== แนะนำมือใหม่ ===
+สำหรับมือใหม่ ควรเน้นที่ หุ้นใหญ่ (Magnificent 7) เป็นหลัก
+เพื่อสร้างฐานพอร์ตให้แข็งแรงก่อนไปเสี่ยงกับหุ้นเล็กครับ
