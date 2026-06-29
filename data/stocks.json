@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25",
+  "lastUpdated": "2026-06-28",
   "processedVideos": [
     "Cz1g9ANsZIk",
     "DfjJsQQn6VI",
@@ -35,7 +35,8 @@
     "6BgYYf31Y7U",
     "zKJD-fc-XCo",
     "GZWeYY62QrQ",
-    "dXk7oylDluA"
+    "dXk7oylDluA",
+    "TTjBaIhwrwc"
   ],
   "mentions": {
     "EOSE": [
@@ -480,6 +481,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "ราคาต่ำเกินพื้นฐาน Forward PE ถูก สะสมตาม EMA"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 540,
+        "note": "PE 16 ถูกที่สุด โฆษณา +33% แนวรับ 540/525/500"
       }
     ],
     "CEG": [
@@ -636,6 +645,14 @@
         "action": "ถือ",
         "price": null,
         "note": "OCS เจ้าตลาด ดีดแรงสวนตลาด ถือรัน แบ่งขายที่ 120 รับใหม่ 70/60 เป้า 133"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 66,
+        "note": "ร่วง 12% เที่ยวบินเปล่า รอดูงบ Q ถัดไป แนวรับ 66/60-62"
       }
     ],
     "COST": [
@@ -846,6 +863,14 @@
         "action": "ซื้อ",
         "price": 1110,
         "note": "ยาลดน้ำหนักร้อนแรง ตลาดยังไล่ซื้อ แนวรับ 1110/1065 เป้า 1200"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 1000,
+        "note": "ATH 1,200 Phase3 ยามะเร็ง -45% Medicare GLP-1 1 ก.ค."
       }
     ],
     "NBIS": [
@@ -1072,6 +1097,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "แนวรับลึก 108/90/80 สะสม DCA"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ถือ",
+        "price": null,
+        "note": "Burry ยังถือ Put รอรับลึก 96/90/80"
       }
     ],
     "NVIS": [
@@ -1466,6 +1499,14 @@
         "action": "ซื้อ",
         "price": 65,
         "note": "แนวต้าน 80/74 จรวด Neutron"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 65,
+        "note": "NASA 3 ภารกิจ win 100% Backlog 17 แนวรับ 65/56"
       }
     ],
     "SMCI": [
@@ -1984,6 +2025,14 @@
         "action": "ซื้อ",
         "price": 250,
         "note": "เปิดคลังหุ่นยนต์ยุโรป AI Alexa ขยาย 10 ประเทศ เป้า 276/300"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 220,
+        "note": "PE 27 Prime Day ATH แนวรับ 220/212/200"
       }
     ],
     "GOOG": [
@@ -2208,6 +2257,14 @@
         "action": "ซื้อ",
         "price": 356,
         "note": "ล้มดีล Oracle 3,000 ล้าน กลุ่มซอฟต์แวร์โดนเท กระจาย 3 ไม้ แนวรับ 366/356/345"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 366,
+        "note": "Burry Call PE 20 Cloud +40% แนวรับ 366/356/350"
       }
     ],
     "SPGI": [
@@ -2574,6 +2631,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "AI workflow enterprise แนวรับ 810/780"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 90,
+        "note": "PE 22 AI Agent แนวรับ 90/85/81 เป้า 100-136"
       }
     ],
     "IONQ": [
@@ -2780,6 +2845,14 @@
         "action": "ถือ",
         "price": null,
         "note": "กำลังจะประกาศไตรมาส รอดูผล"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 150,
+        "note": "Buyback 36% แนวรับ 150/138/128 เป้า 165-232"
       }
     ],
     "FICO": [
@@ -3394,6 +3467,14 @@
         "action": "ซื้อ",
         "price": null,
         "note": "เทคโนโลยีเร็วกว่า Blackwell 15เท่า มี AWS และ OpenAI สนับสนุน แต่ความเสี่ยงยังสูง"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 160,
+        "note": "IPO Wafer-scale 750 token/s GPT5.6 แนวรับ 160/140/120"
       }
     ],
     "ANET": [
@@ -3590,6 +3671,14 @@
         "action": "ซื้อ",
         "price": 75,
         "note": "PE 25x ถูกสุด 4 ปี รายได้โต 16% ผู้ใช้โฆษณา 250 ล้าน แนวรับ 74-75/70/66"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 70,
+        "note": "PE 22 Margin 31% ลุ้นงบ 16 ก.ค. แนวรับ 70/66/60"
       }
     ],
     "PROC": [
@@ -3848,6 +3937,14 @@
         "action": "ซื้อเพิ่ม",
         "price": 44,
         "note": "GLP-1 leader เป้า 47-50-60"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 44,
+        "note": "UK อนุมัติยาเม็ด 6 ก.ค. ลุ้น NHS แนวรับ 44/38/35"
       }
     ],
     "MCD": [
@@ -4020,6 +4117,14 @@
         "action": "ซื้อ",
         "price": 180,
         "note": "มีแนวรับชัด เด้งกลับแล้ว กู้เงินขยาย Cloud แนวรับ 180/171-172 เป้า 200/210"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 135,
+        "note": "PE 18.5 ดิ่งข่าว OpenAI แนวรับ 135/120/114"
       }
     ],
     "ASTS": [
@@ -4102,6 +4207,14 @@
         "action": "ซื้อ",
         "price": 62,
         "note": "Satellite Direct-to-Cell แนวรับ 55/48"
+      },
+      {
+        "date": "2026-06-28",
+        "videoId": "TTjBaIhwrwc",
+        "videoTitle": "7 หุ้นใหญ่ยังถูกและยังรอ",
+        "action": "ซื้อ",
+        "price": 63,
+        "note": "BlueBird 11-13 ส.ค. ดีลญี่ปุ่น แนวรับ 67/63/55/48"
       }
     ],
     "RACE": [
